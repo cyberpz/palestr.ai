@@ -1,0 +1,44 @@
+{
+ "gsm8k": {
+  "date": "2026-10-20",
+  "score": 0.6914329037149356,
+  "flexible": 0.6224412433661866
+ },
+ "ifeval": {
+  "date": "2026-10-20",
+  "score": 0.3290203327171904,
+  "inst_strict": 0.4568345323741007
+ },
+ "smoke": {
+  "date": "2026-10-20",
+  "tok_per_s": 41.1,
+  "prompt_tokens": 22,
+  "n_predicted": 87,
+  "sanity": {
+   "math": {
+    "content": "",
+    "reasoning_len": 2954,
+    "finish": "length",
+    "secs": 14.3
+   },
+   "logic": {
+    "content": "",
+    "reasoning_len": 2496,
+    "finish": "length",
+    "secs": 13.4
+   },
+   "extract": {
+    "content": "```json\n{\n  \"nome\": \"John Doe\",\n  \"citt\u00e0\": \"Rome\"\n}\n```",
+    "reasoning_len": 1130,
+    "finish": "stop",
+    "secs": 6.3
+   },
+   "italian": {
+    "content": "",
+    "reasoning_len": 3009,
+    "finish": "length",
+    "secs": 15.0
+   }
+  }
+ }
+}

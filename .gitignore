@@ -1,0 +1,7 @@
+harness/models.json
+harness/results/
+harness/logs/
+harness/hf-cache/
+__pycache__/
+*.pyc
+.venv/

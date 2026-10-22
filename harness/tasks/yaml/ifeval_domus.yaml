@@ -1,0 +1,5 @@
+include: F:/palestra/.venv/Lib/site-packages/lm_eval/tasks/ifeval/ifeval.yaml
+generation_kwargs:
+  until:
+    - "</s>"
+  max_gen_toks: 1024

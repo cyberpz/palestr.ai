@@ -1,0 +1,44 @@
+{
+ "gsm8k": {
+  "date": "2026-10-20",
+  "score": 0.8081880212282032,
+  "flexible": 0.8097043214556482
+ },
+ "ifeval": {
+  "date": "2026-10-20",
+  "score": 0.5083179297597042,
+  "inst_strict": 0.6151079136690647
+ },
+ "smoke": {
+  "date": "2026-10-19",
+  "tok_per_s": 45.5,
+  "prompt_tokens": 22,
+  "n_predicted": 128,
+  "sanity": {
+   "math": {
+    "content": "372",
+    "reasoning_len": 387,
+    "finish": "stop",
+    "secs": 3.6
+   },
+   "logic": {
+    "content": "**Incerto.**\n\nDa \u201cTutti i Blop sono Razz\u201d e \u201cAlcuni Razz sono Fizz\u201d non si pu\u00f2 concludere necessariamente che \u201cAlcuni Blop sono Fizz\u201d.\n\nEsempio in cui \u00e8 **falso**:\n- Blop = {1}\n- Razz = {1, 2}\n- Fizz = {2}\n\nTutti i Blop sono Razz, e alcuni Razz sono Fizz, ma nessun Blop \u00e8 Fizz.\n\nEsempio in cui \u00e8 **vero**:\n- Blop = {1}\n- Razz = {1, 2}\n- Fizz = {1, 2}\n\nQuindi la conclusione pu\u00f2 essere vera o falsa: \u00e8 **incerta**.",
+    "reasoning_len": 719,
+    "finish": "stop",
+    "secs": 9.1
+   },
+   "extract": {
+    "content": "{\n  \"nome\": \"John Doe\",\n  \"citta\": \"Rome\"\n}",
+    "reasoning_len": 342,
+    "finish": "stop",
+    "secs": 3.7
+   },
+   "italian": {
+    "content": "Si segnala che il server risulta inattivo; si prega cortesemente di provvedere al suo ripristino.",
+    "reasoning_len": 817,
+    "finish": "stop",
+    "secs": 7.4
+   }
+  }
+ }
+}

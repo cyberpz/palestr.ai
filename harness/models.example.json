@@ -1,0 +1,15 @@
+{
+  "_comment": "Copy to models.json and adapt paths. Optional 'dashboard' block enables result push (token via PALESTRA_TOKEN env).",
+  "server": "C:\\path\\to\\llama-server.exe",
+  "python": "C:\\path\\to\\.venv\\Scripts\\python.exe",
+  "models": [
+    {
+      "id": "example-model",
+      "path": "D:\\models\\example-model-Q4_K_M.gguf",
+      "quant": "Q4_K_M",
+      "ctx": 8192,
+      "gpus": "0",
+      "tasks": ["smoke", "mmlu", "gsm8k", "ifeval"]
+    }
+  ]
+}
