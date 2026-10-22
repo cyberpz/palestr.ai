@@ -1,0 +1,754 @@
+{
+ "minicpm5-2b-heretic": {
+  "smoke": {
+   "tok_per_s": 100.0,
+   "prompt_tokens": 28,
+   "n_predicted": 128,
+   "sanity": {
+    "math": {
+     "content": "Raggionamento: 17 - 23 = -6. Poi -6 - 19 = -25.\nRisposta: -25",
+     "reasoning_len": 2282,
+     "finish": "stop",
+     "secs": 6.7
+    },
+    "logic": {
+     "content": "Le affermazioni non hanno informazioni aggiuntive, quindi non possiamo determinare se siano vere, false o incerte. La risposta \u00e8 incerto.",
+     "reasoning_len": 1102,
+     "finish": "stop",
+     "secs": 3.3
+    },
+    "extract": {
+     "content": "{\n  \"name\": \"Giuseppe Vitale\",\n  \"city\": \"Brindisi\"\n}",
+     "reasoning_len": 324,
+     "finish": "stop",
+     "secs": 1.0
+    },
+    "italian": {
+     "content": "",
+     "reasoning_len": 2926,
+     "finish": "length",
+     "secs": 7.4
+    }
+   }
+  },
+  "mmlu": {
+   "subtasks": {
+    "mmlu_abstract_algebra_generative": 0.45,
+    "mmlu_anatomy_generative": 0.563,
+    "mmlu_astronomy_generative": 0.5789,
+    "mmlu_college_biology_generative": 0.6042,
+    "mmlu_college_chemistry_generative": 0.4,
+    "mmlu_college_computer_science_generative": 0.47,
+    "mmlu_college_mathematics_generative": 0.38,
+    "mmlu_college_physics_generative": 0.3529,
+    "mmlu_computer_security_generative": 0.71,
+    "mmlu_conceptual_physics_generative": 0.5574,
+    "mmlu_electrical_engineering_generative": 0.5931,
+    "mmlu_elementary_mathematics_generative": 0.4286,
+    "mmlu_high_school_biology_generative": 0.7129,
+    "mmlu_high_school_chemistry_generative": 0.5123,
+    "mmlu_high_school_computer_science_generative": 0.58,
+    "mmlu_high_school_mathematics_generative": 0.363,
+    "mmlu_high_school_physics_generative": 0.4106,
+    "mmlu_high_school_statistics_generative": 0.5417,
+    "mmlu_machine_learning_generative": 0.375,
+    "mmlu_business_ethics_generative": 0.53,
+    "mmlu_clinical_knowledge_generative": 0.6302,
+    "mmlu_college_medicine_generative": 0.6243,
+    "mmlu_global_facts_generative": 0.39,
+    "mmlu_human_aging_generative": 0.6054,
+    "mmlu_management_generative": 0.6796,
+    "mmlu_marketing_generative": 0.7863,
+    "mmlu_medical_genetics_generative": 0.69,
+    "mmlu_miscellaneous_generative": 0.6143,
+    "mmlu_nutrition_generative": 0.6176,
+    "mmlu_professional_accounting_generative": 0.4326,
+    "mmlu_professional_medicine_generative": 0.6324,
+    "mmlu_virology_generative": 0.506,
+    "mmlu_econometrics_generative": 0.4561,
+    "mmlu_high_school_geography_generative": 0.596,
+    "mmlu_high_school_government_and_politics_generative": 0.6891,
+    "mmlu_high_school_macroeconomics_generative": 0.5769,
+    "mmlu_high_school_microeconomics_generative": 0.6471,
+    "mmlu_high_school_psychology_generative": 0.745,
+    "mmlu_human_sexuality_generative": 0.6718,
+    "mmlu_professional_psychology_generative": 0.531,
+    "mmlu_public_relations_generative": 0.5182,
+    "mmlu_security_studies_generative": 0.449,
+    "mmlu_sociology_generative": 0.6517,
+    "mmlu_us_foreign_policy_generative": 0.76,
+    "mmlu_formal_logic_generative": 0.3413,
+    "mmlu_high_school_european_history_generative": 0.6424,
+    "mmlu_high_school_us_history_generative": 0.6667,
+    "mmlu_high_school_world_history_generative": 0.7384,
+    "mmlu_international_law_generative": 0.6033,
+    "mmlu_jurisprudence_generative": 0.6296,
+    "mmlu_logical_fallacies_generative": 0.638,
+    "mmlu_moral_disputes_generative": 0.5983,
+    "mmlu_moral_scenarios_generative": 0.238,
+    "mmlu_philosophy_generative": 0.6624,
+    "mmlu_prehistory_generative": 0.6173,
+    "mmlu_professional_law_generative": 0.4022,
+    "mmlu_world_religions_generative": 0.7018,
+    "mmlu_generative::stem": 0.5103,
+    "mmlu_generative::other": 0.6028,
+    "mmlu_generative::social sciences": 0.6094,
+    "mmlu_generative::humanities": 0.482,
+    "mmlu_generative": 0.543
+   },
+   "score": 0.562,
+   "n_subtasks": 62
+  },
+  "gsm8k": {
+   "score": 0.7361637604245641,
+   "flexible": 0.5473843821076573
+  },
+  "ifeval": {
+   "score": 0.3438077634011091,
+   "inst_strict": 0.49160671462829736
+  }
+ },
+ "spark-x2.5-4b": {
+  "smoke": {
+   "tok_per_s": 55.6,
+   "prompt_tokens": 24,
+   "n_predicted": 128,
+   "sanity": {
+    "math": {
+     "content": "17 \u00d7 23 = 391, quindi 391 - 19 = 372.\n\nRisultato finale: 372",
+     "reasoning_len": 2111,
+     "finish": "stop",
+     "secs": 12.5
+    },
+    "logic": {
+     "content": "",
+     "reasoning_len": 2996,
+     "finish": "length",
+     "secs": 14.1
+    },
+    "extract": {
+     "content": "{\n  \"nome\": \"Giuseppe Vitale\",\n  \"citta\": \"Brindisi\"\n}",
+     "reasoning_len": 875,
+     "finish": "stop",
+     "secs": 5.0
+    },
+    "italian": {
+     "content": "",
+     "reasoning_len": 2713,
+     "finish": "length",
+     "secs": 14.1
+    }
+   }
+  },
+  "mmlu": {
+   "subtasks": {
+    "mmlu_abstract_algebra_generative": 0.47,
+    "mmlu_anatomy_generative": 0.6296,
+    "mmlu_astronomy_generative": 0.7697,
+    "mmlu_college_biology_generative": 0.8194,
+    "mmlu_college_chemistry_generative": 0.5,
+    "mmlu_college_computer_science_generative": 0.63,
+    "mmlu_college_mathematics_generative": 0.45,
+    "mmlu_college_physics_generative": 0.5294,
+    "mmlu_computer_security_generative": 0.74,
+    "mmlu_conceptual_physics_generative": 0.7191,
+    "mmlu_electrical_engineering_generative": 0.6276,
+    "mmlu_elementary_mathematics_generative": 0.5873,
+    "mmlu_high_school_biology_generative": 0.829,
+    "mmlu_high_school_chemistry_generative": 0.6897,
+    "mmlu_high_school_computer_science_generative": 0.76,
+    "mmlu_high_school_mathematics_generative": 0.4519,
+    "mmlu_high_school_physics_generative": 0.5232,
+    "mmlu_high_school_statistics_generative": 0.6111,
+    "mmlu_machine_learning_generative": 0.6161,
+    "mmlu_business_ethics_generative": 0.68,
+    "mmlu_clinical_knowledge_generative": 0.7245,
+    "mmlu_college_medicine_generative": 0.659,
+    "mmlu_global_facts_generative": 0.35,
+    "mmlu_human_aging_generative": 0.6547,
+    "mmlu_management_generative": 0.8447,
+    "mmlu_marketing_generative": 0.9103,
+    "mmlu_medical_genetics_generative": 0.76,
+    "mmlu_miscellaneous_generative": 0.7612,
+    "mmlu_nutrition_generative": 0.7222,
+    "mmlu_professional_accounting_generative": 0.5496,
+    "mmlu_professional_medicine_generative": 0.7022,
+    "mmlu_virology_generative": 0.488,
+    "mmlu_econometrics_generative": 0.5789,
+    "mmlu_high_school_geography_generative": 0.7727,
+    "mmlu_high_school_government_and_politics_generative": 0.772,
+    "mmlu_high_school_macroeconomics_generative": 0.6718,
+    "mmlu_high_school_microeconomics_generative": 0.7857,
+    "mmlu_high_school_psychology_generative": 0.8569,
+    "mmlu_human_sexuality_generative": 0.7252,
+    "mmlu_professional_psychology_generative": 0.6454,
+    "mmlu_public_relations_generative": 0.6182,
+    "mmlu_security_studies_generative": 0.649,
+    "mmlu_sociology_generative": 0.796,
+    "mmlu_us_foreign_policy_generative": 0.83,
+    "mmlu_formal_logic_generative": 0.5238,
+    "mmlu_high_school_european_history_generative": 0.7818,
+    "mmlu_high_school_us_history_generative": 0.7549,
+    "mmlu_high_school_world_history_generative": 0.8354,
+    "mmlu_international_law_generative": 0.7355,
+    "mmlu_jurisprudence_generative": 0.75,
+    "mmlu_logical_fallacies_generative": 0.7975,
+    "mmlu_moral_disputes_generative": 0.6908,
+    "mmlu_moral_scenarios_generative": 0.4201,
+    "mmlu_philosophy_generative": 0.6817,
+    "mmlu_prehistory_generative": 0.6481,
+    "mmlu_professional_law_generative": 0.513,
+    "mmlu_world_religions_generative": 0.7368,
+    "mmlu_generative::stem": 0.6375,
+    "mmlu_generative::other": 0.7,
+    "mmlu_generative::social sciences": 0.7293,
+    "mmlu_generative::humanities": 0.5945,
+    "mmlu_generative": 0.657
+   },
+   "score": 0.6718,
+   "n_subtasks": 62
+  },
+  "gsm8k": {
+   "score": 0.8104624715693708,
+   "flexible": 0.8112206216830933
+  },
+  "ifeval": {
+   "score": 0.19593345656192238,
+   "inst_strict": 0.32973621103117506
+  }
+ },
+ "mellum2-12b-a2.5b-thinking": {
+  "smoke": {
+   "tok_per_s": 1.0,
+   "prompt_tokens": 26,
+   "n_predicted": 128,
+   "sanity": {
+    "math": {
+     "content": "-18.2608695652",
+     "reasoning_len": 571,
+     "finish": "stop",
+     "secs": 251.4
+    },
+    "logic": {
+     "error": "timed out"
+    },
+    "extract": {
+     "content": "{\n  \"name\": \"Giuseppe Vitale\",\n  \"city\": \"Brindisi\"\n}",
+     "reasoning_len": 858,
+     "finish": "stop",
+     "secs": 297.1
+    },
+    "italian": {
+     "error": "timed out"
+    }
+   }
+  },
+  "mmlu": {
+   "subtasks": {
+    "mmlu_abstract_algebra_generative": 0.54,
+    "mmlu_anatomy_generative": 0.637,
+    "mmlu_astronomy_generative": 0.7697,
+    "mmlu_college_biology_generative": 0.7986,
+    "mmlu_college_chemistry_generative": 0.53,
+    "mmlu_college_computer_science_generative": 0.63,
+    "mmlu_college_mathematics_generative": 0.5,
+    "mmlu_college_physics_generative": 0.5294,
+    "mmlu_computer_security_generative": 0.79,
+    "mmlu_conceptual_physics_generative": 0.6638,
+    "mmlu_electrical_engineering_generative": 0.6483,
+    "mmlu_elementary_mathematics_generative": 0.6561,
+    "mmlu_high_school_biology_generative": 0.8387,
+    "mmlu_high_school_chemistry_generative": 0.6798,
+    "mmlu_high_school_computer_science_generative": 0.83,
+    "mmlu_high_school_mathematics_generative": 0.4778,
+    "mmlu_high_school_physics_generative": 0.5364,
+    "mmlu_high_school_statistics_generative": 0.6343,
+    "mmlu_machine_learning_generative": 0.5536,
+    "mmlu_business_ethics_generative": 0.71,
+    "mmlu_clinical_knowledge_generative": 0.7396,
+    "mmlu_college_medicine_generative": 0.711,
+    "mmlu_global_facts_generative": 0.3,
+    "mmlu_human_aging_generative": 0.7175,
+    "mmlu_management_generative": 0.835,
+    "mmlu_marketing_generative": 0.8547,
+    "mmlu_medical_genetics_generative": 0.8,
+    "mmlu_miscellaneous_generative": 0.8008,
+    "mmlu_nutrition_generative": 0.7712,
+    "mmlu_professional_accounting_generative": 0.4752,
+    "mmlu_professional_medicine_generative": 0.7206,
+    "mmlu_virology_generative": 0.506,
+    "mmlu_econometrics_generative": 0.5614,
+    "mmlu_high_school_geography_generative": 0.8333,
+    "mmlu_high_school_government_and_politics_generative": 0.9016,
+    "mmlu_high_school_macroeconomics_generative": 0.7564,
+    "mmlu_high_school_microeconomics_generative": 0.8655,
+    "mmlu_high_school_psychology_generative": 0.8679,
+    "mmlu_human_sexuality_generative": 0.7328,
+    "mmlu_professional_psychology_generative": 0.701,
+    "mmlu_public_relations_generative": 0.6727,
+    "mmlu_security_studies_generative": 0.7469,
+    "mmlu_sociology_generative": 0.8756,
+    "mmlu_us_foreign_policy_generative": 0.83,
+    "mmlu_formal_logic_generative": 0.6111,
+    "mmlu_high_school_european_history_generative": 0.8061,
+    "mmlu_high_school_us_history_generative": 0.8235,
+    "mmlu_high_school_world_history_generative": 0.8017,
+    "mmlu_international_law_generative": 0.8099,
+    "mmlu_jurisprudence_generative": 0.7963,
+    "mmlu_logical_fallacies_generative": 0.681,
+    "mmlu_moral_disputes_generative": 0.7168,
+    "mmlu_moral_scenarios_generative": 0.5307,
+    "mmlu_philosophy_generative": 0.7138,
+    "mmlu_prehistory_generative": 0.7654,
+    "mmlu_professional_law_generative": 0.4987,
+    "mmlu_world_religions_generative": 0.848,
+    "mmlu_generative::stem": 0.653,
+    "mmlu_generative::other": 0.7155,
+    "mmlu_generative::social sciences": 0.7858,
+    "mmlu_generative::humanities": 0.6304,
+    "mmlu_generative": 0.6884
+   },
+   "score": 0.7001,
+   "n_subtasks": 62
+  },
+  "gsm8k": {
+   "score": 0.8112206216830933,
+   "flexible": 0.8112206216830933
+  },
+  "ifeval": {
+   "score": 0.27171903881700554,
+   "inst_strict": 0.41606714628297364
+  }
+ },
+ "qwen3.8-27b": {
+  "smoke": {
+   "tok_per_s": 45.5,
+   "prompt_tokens": 22,
+   "n_predicted": 128,
+   "sanity": {
+    "math": {
+     "content": "372",
+     "reasoning_len": 387,
+     "finish": "stop",
+     "secs": 3.6
+    },
+    "logic": {
+     "content": "**Incerto.**\n\nDa \u201cTutti i Blop sono Razz\u201d e \u201cAlcuni Razz sono Fizz\u201d non si pu\u00f2 concludere necessariamente che \u201cAlcuni Blop sono Fizz\u201d.\n\nEsempio in cui \u00e8 **falso**:\n- Blop = {1}\n- Razz = {1, 2}\n- Fizz = {2}\n\nTutti i Blop sono Razz, e alcuni Razz sono Fizz, ma nessun Blop \u00e8 Fizz.\n\nEsempio in cui \u00e8 **vero**:\n- Blop = {1}\n- Razz = {1, 2}\n- Fizz = {1, 2}\n\nQuindi la conclusione pu\u00f2 essere vera o falsa: \u00e8 **incerta**.",
+     "reasoning_len": 719,
+     "finish": "stop",
+     "secs": 9.1
+    },
+    "extract": {
+     "content": "{\n  \"nome\": \"Giuseppe Vitale\",\n  \"citta\": \"Brindisi\"\n}",
+     "reasoning_len": 342,
+     "finish": "stop",
+     "secs": 3.7
+    },
+    "italian": {
+     "content": "Si segnala che il server risulta inattivo; si prega cortesemente di provvedere al suo ripristino.",
+     "reasoning_len": 817,
+     "finish": "stop",
+     "secs": 7.4
+    }
+   }
+  },
+  "gsm8k": {
+   "score": 0.8081880212282032,
+   "flexible": 0.8097043214556482
+  },
+  "ifeval": {
+   "score": 0.5083179297597042,
+   "inst_strict": 0.6151079136690647
+  }
+ },
+ "qwen3.6-35b-a3b": {
+  "smoke": {
+   "tok_per_s": 41.1,
+   "prompt_tokens": 22,
+   "n_predicted": 87,
+   "sanity": {
+    "math": {
+     "content": "",
+     "reasoning_len": 2954,
+     "finish": "length",
+     "secs": 14.3
+    },
+    "logic": {
+     "content": "",
+     "reasoning_len": 2496,
+     "finish": "length",
+     "secs": 13.4
+    },
+    "extract": {
+     "content": "```json\n{\n  \"nome\": \"Giuseppe Vitale\",\n  \"citt\u00e0\": \"Brindisi\"\n}\n```",
+     "reasoning_len": 1130,
+     "finish": "stop",
+     "secs": 6.3
+    },
+    "italian": {
+     "content": "",
+     "reasoning_len": 3009,
+     "finish": "length",
+     "secs": 15.0
+    }
+   }
+  },
+  "gsm8k": {
+   "score": 0.6914329037149356,
+   "flexible": 0.6224412433661866
+  },
+  "ifeval": {
+   "score": 0.3290203327171904,
+   "inst_strict": 0.4568345323741007
+  }
+ },
+ "lfm2.5-24b-a2b": {
+  "smoke": {
+   "tok_per_s": 123.5,
+   "prompt_tokens": 24,
+   "n_predicted": 128,
+   "sanity": {
+    "math": {
+     "content": "\n\n372",
+     "reasoning_len": 1974,
+     "finish": "stop",
+     "secs": 3.8
+    },
+    "logic": {
+     "content": "",
+     "reasoning_len": 2828,
+     "finish": "length",
+     "secs": 6.5
+    },
+    "extract": {
+     "content": "\n\n{\n  \"nome\": \"Giuseppe Vitale\",\n  \"citta\": \"Brindisi\"\n}",
+     "reasoning_len": 867,
+     "finish": "stop",
+     "secs": 2.1
+    },
+    "italian": {
+     "content": "\n\nIn merito al malfunzionamento del server, si segnala che il servizio \u00e8 attualmente inattivo. Si prega di provvedere alla riparazione o al ripristino del sistema.",
+     "reasoning_len": 1177,
+     "finish": "stop",
+     "secs": 2.8
+    }
+   }
+  },
+  "mmlu": {
+   "subtasks": {
+    "mmlu_abstract_algebra_generative": 0.26,
+    "mmlu_anatomy_generative": 0.4889,
+    "mmlu_astronomy_generative": 0.625,
+    "mmlu_college_biology_generative": 0.6875,
+    "mmlu_college_chemistry_generative": 0.43,
+    "mmlu_college_computer_science_generative": 0.49,
+    "mmlu_college_mathematics_generative": 0.37,
+    "mmlu_college_physics_generative": 0.4216,
+    "mmlu_computer_security_generative": 0.57,
+    "mmlu_conceptual_physics_generative": 0.566,
+    "mmlu_electrical_engineering_generative": 0.5586,
+    "mmlu_elementary_mathematics_generative": 0.4894,
+    "mmlu_high_school_biology_generative": 0.6871,
+    "mmlu_high_school_chemistry_generative": 0.5517,
+    "mmlu_high_school_computer_science_generative": 0.57,
+    "mmlu_high_school_mathematics_generative": 0.2741,
+    "mmlu_high_school_physics_generative": 0.4967,
+    "mmlu_high_school_statistics_generative": 0.5185,
+    "mmlu_machine_learning_generative": 0.3929,
+    "mmlu_business_ethics_generative": 0.54,
+    "mmlu_clinical_knowledge_generative": 0.6113,
+    "mmlu_college_medicine_generative": 0.5723,
+    "mmlu_global_facts_generative": 0.36,
+    "mmlu_human_aging_generative": 0.5426,
+    "mmlu_management_generative": 0.6214,
+    "mmlu_marketing_generative": 0.7308,
+    "mmlu_medical_genetics_generative": 0.58,
+    "mmlu_miscellaneous_generative": 0.6411,
+    "mmlu_nutrition_generative": 0.6634,
+    "mmlu_professional_accounting_generative": 0.383,
+    "mmlu_professional_medicine_generative": 0.636,
+    "mmlu_virology_generative": 0.4277,
+    "mmlu_econometrics_generative": 0.4298,
+    "mmlu_high_school_geography_generative": 0.6263,
+    "mmlu_high_school_government_and_politics_generative": 0.6373,
+    "mmlu_high_school_macroeconomics_generative": 0.4923,
+    "mmlu_high_school_microeconomics_generative": 0.5798,
+    "mmlu_high_school_psychology_generative": 0.7083,
+    "mmlu_human_sexuality_generative": 0.6336,
+    "mmlu_professional_psychology_generative": 0.5016,
+    "mmlu_public_relations_generative": 0.4818,
+    "mmlu_security_studies_generative": 0.6041,
+    "mmlu_sociology_generative": 0.5821,
+    "mmlu_us_foreign_policy_generative": 0.74,
+    "mmlu_formal_logic_generative": 0.4206,
+    "mmlu_high_school_european_history_generative": 0.6606,
+    "mmlu_high_school_us_history_generative": 0.6863,
+    "mmlu_high_school_world_history_generative": 0.6751,
+    "mmlu_international_law_generative": 0.6198,
+    "mmlu_jurisprudence_generative": 0.6204,
+    "mmlu_logical_fallacies_generative": 0.5706,
+    "mmlu_moral_disputes_generative": 0.5376,
+    "mmlu_moral_scenarios_generative": 0.2536,
+    "mmlu_philosophy_generative": 0.5434,
+    "mmlu_prehistory_generative": 0.5154,
+    "mmlu_professional_law_generative": 0.4407,
+    "mmlu_world_religions_generative": 0.6667,
+    "mmlu_generative::stem": 0.5078,
+    "mmlu_generative::other": 0.5864,
+    "mmlu_generative::social sciences": 0.583,
+    "mmlu_generative::humanities": 0.4752,
+    "mmlu_generative": 0.5308
+   },
+   "score": 0.543,
+   "n_subtasks": 62
+  },
+  "gsm8k": {
+   "score": 0.7649734647460197,
+   "flexible": 0.7649734647460197
+  },
+  "ifeval": {
+   "score": 0.25693160813308685,
+   "inst_strict": 0.39688249400479614
+  }
+ },
+ "granite-4.2-3b": {
+  "smoke": {
+   "tok_per_s": 101.3,
+   "prompt_tokens": 25,
+   "n_predicted": 128,
+   "sanity": {
+    "math": {
+     "content": "372",
+     "reasoning_len": 780,
+     "finish": "stop",
+     "secs": 2.8
+    },
+    "logic": {
+     "content": "",
+     "reasoning_len": 2822,
+     "finish": "length",
+     "secs": 8.0
+    },
+    "extract": {
+     "content": "{\n  \"nome\": \"Giuseppe Vitale\",\n  \"citta'\": \"Brindisi\"\n}",
+     "reasoning_len": 2258,
+     "finish": "stop",
+     "secs": 7.9
+    },
+    "italian": {
+     "content": "",
+     "reasoning_len": 2825,
+     "finish": "length",
+     "secs": 13.3
+    }
+   }
+  },
+  "mmlu": {
+   "subtasks": {
+    "mmlu_abstract_algebra_generative": 0.3,
+    "mmlu_anatomy_generative": 0.5185,
+    "mmlu_astronomy_generative": 0.7039,
+    "mmlu_college_biology_generative": 0.5764,
+    "mmlu_college_chemistry_generative": 0.36,
+    "mmlu_college_computer_science_generative": 0.39,
+    "mmlu_college_mathematics_generative": 0.29,
+    "mmlu_college_physics_generative": 0.3431,
+    "mmlu_computer_security_generative": 0.61,
+    "mmlu_conceptual_physics_generative": 0.5532,
+    "mmlu_electrical_engineering_generative": 0.5448,
+    "mmlu_elementary_mathematics_generative": 0.3862,
+    "mmlu_high_school_biology_generative": 0.6645,
+    "mmlu_high_school_chemistry_generative": 0.468,
+    "mmlu_high_school_computer_science_generative": 0.61,
+    "mmlu_high_school_mathematics_generative": 0.2741,
+    "mmlu_high_school_physics_generative": 0.3841,
+    "mmlu_high_school_statistics_generative": 0.4676,
+    "mmlu_machine_learning_generative": 0.3661,
+    "mmlu_business_ethics_generative": 0.43,
+    "mmlu_clinical_knowledge_generative": 0.5925,
+    "mmlu_college_medicine_generative": 0.4855,
+    "mmlu_global_facts_generative": 0.38,
+    "mmlu_human_aging_generative": 0.583,
+    "mmlu_management_generative": 0.6796,
+    "mmlu_marketing_generative": 0.7479,
+    "mmlu_medical_genetics_generative": 0.55,
+    "mmlu_miscellaneous_generative": 0.7152,
+    "mmlu_nutrition_generative": 0.6438,
+    "mmlu_professional_accounting_generative": 0.3972,
+    "mmlu_professional_medicine_generative": 0.5294,
+    "mmlu_virology_generative": 0.4277,
+    "mmlu_econometrics_generative": 0.3246,
+    "mmlu_high_school_geography_generative": 0.6818,
+    "mmlu_high_school_government_and_politics_generative": 0.6736,
+    "mmlu_high_school_macroeconomics_generative": 0.5462,
+    "mmlu_high_school_microeconomics_generative": 0.6345,
+    "mmlu_high_school_psychology_generative": 0.8018,
+    "mmlu_human_sexuality_generative": 0.5573,
+    "mmlu_professional_psychology_generative": 0.4869,
+    "mmlu_public_relations_generative": 0.5909,
+    "mmlu_security_studies_generative": 0.5918,
+    "mmlu_sociology_generative": 0.7363,
+    "mmlu_us_foreign_policy_generative": 0.72,
+    "mmlu_formal_logic_generative": 0.3651,
+    "mmlu_high_school_european_history_generative": 0.3939,
+    "mmlu_high_school_us_history_generative": 0.4804,
+    "mmlu_high_school_world_history_generative": 0.4304,
+    "mmlu_international_law_generative": 0.562,
+    "mmlu_jurisprudence_generative": 0.537,
+    "mmlu_logical_fallacies_generative": 0.6319,
+    "mmlu_moral_disputes_generative": 0.5318,
+    "mmlu_moral_scenarios_generative": 0.0168,
+    "mmlu_philosophy_generative": 0.6045,
+    "mmlu_prehistory_generative": 0.6265,
+    "mmlu_professional_law_generative": 0.2836,
+    "mmlu_world_religions_generative": 0.6901,
+    "mmlu_generative::stem": 0.4697,
+    "mmlu_generative::other": 0.5909,
+    "mmlu_generative::social sciences": 0.6188,
+    "mmlu_generative::humanities": 0.3577,
+    "mmlu_generative": 0.4917
+   },
+   "score": 0.5161,
+   "n_subtasks": 62
+  },
+  "gsm8k": {
+   "score": 0.7528430629264594,
+   "flexible": 0.759666413949962
+  }
+ },
+ "granite-4.2-8b": {
+  "smoke": {
+   "tok_per_s": 96.8,
+   "prompt_tokens": 25,
+   "n_predicted": 128,
+   "sanity": {
+    "math": {
+     "content": "372",
+     "reasoning_len": 780,
+     "finish": "stop",
+     "secs": 3.8
+    },
+    "logic": {
+     "content": "",
+     "reasoning_len": 2982,
+     "finish": "length",
+     "secs": 10.1
+    },
+    "extract": {
+     "content": "{\n  \"nome\": \"Giuseppe Vitale\",\n  \"citta\": \"Brindisi\"\n}",
+     "reasoning_len": 844,
+     "finish": "stop",
+     "secs": 5.6
+    },
+    "italian": {
+     "error": "[WinError 10054] Connessione in corso interrotta forzatamente dall'host remoto"
+    }
+   }
+  },
+  "mmlu": {
+   "subtasks": {
+    "mmlu_abstract_algebra_generative": 0.25,
+    "mmlu_anatomy_generative": 0.5259,
+    "mmlu_astronomy_generative": 0.6974,
+    "mmlu_college_biology_generative": 0.5833,
+    "mmlu_college_chemistry_generative": 0.38,
+    "mmlu_college_computer_science_generative": 0.39,
+    "mmlu_college_mathematics_generative": 0.26,
+    "mmlu_college_physics_generative": 0.3627,
+    "mmlu_computer_security_generative": 0.61,
+    "mmlu_conceptual_physics_generative": 0.566,
+    "mmlu_electrical_engineering_generative": 0.531,
+    "mmlu_elementary_mathematics_generative": 0.3942,
+    "mmlu_high_school_biology_generative": 0.6613,
+    "mmlu_high_school_chemistry_generative": 0.468,
+    "mmlu_high_school_computer_science_generative": 0.55,
+    "mmlu_high_school_mathematics_generative": 0.2852,
+    "mmlu_high_school_physics_generative": 0.4172,
+    "mmlu_high_school_statistics_generative": 0.4583,
+    "mmlu_machine_learning_generative": 0.3393,
+    "mmlu_business_ethics_generative": 0.47,
+    "mmlu_clinical_knowledge_generative": 0.5925,
+    "mmlu_college_medicine_generative": 0.4855,
+    "mmlu_global_facts_generative": 0.38,
+    "mmlu_human_aging_generative": 0.5874,
+    "mmlu_management_generative": 0.6796,
+    "mmlu_marketing_generative": 0.765,
+    "mmlu_medical_genetics_generative": 0.54,
+    "mmlu_miscellaneous_generative": 0.7063,
+    "mmlu_nutrition_generative": 0.6275,
+    "mmlu_professional_accounting_generative": 0.4078,
+    "mmlu_professional_medicine_generative": 0.5515,
+    "mmlu_virology_generative": 0.4398,
+    "mmlu_econometrics_generative": 0.3246,
+    "mmlu_high_school_geography_generative": 0.702,
+    "mmlu_high_school_government_and_politics_generative": 0.6632,
+    "mmlu_high_school_macroeconomics_generative": 0.5513,
+    "mmlu_high_school_microeconomics_generative": 0.6261,
+    "mmlu_high_school_psychology_generative": 0.7908,
+    "mmlu_human_sexuality_generative": 0.5802,
+    "mmlu_professional_psychology_generative": 0.4918,
+    "mmlu_public_relations_generative": 0.5818,
+    "mmlu_security_studies_generative": 0.5959,
+    "mmlu_sociology_generative": 0.7264,
+    "mmlu_us_foreign_policy_generative": 0.71,
+    "mmlu_formal_logic_generative": 0.3571,
+    "mmlu_high_school_european_history_generative": 0.3939,
+    "mmlu_high_school_us_history_generative": 0.4951,
+    "mmlu_high_school_world_history_generative": 0.4219,
+    "mmlu_international_law_generative": 0.5537,
+    "mmlu_jurisprudence_generative": 0.5463,
+    "mmlu_logical_fallacies_generative": 0.6196,
+    "mmlu_moral_disputes_generative": 0.5231,
+    "mmlu_moral_scenarios_generative": 0.0179,
+    "mmlu_philosophy_generative": 0.5981,
+    "mmlu_prehistory_generative": 0.6142,
+    "mmlu_professional_law_generative": 0.2777,
+    "mmlu_world_religions_generative": 0.7076,
+    "mmlu_generative::stem": 0.4688,
+    "mmlu_generative::other": 0.5932,
+    "mmlu_generative::social sciences": 0.6185,
+    "mmlu_generative::humanities": 0.3543,
+    "mmlu_generative": 0.4907
+   },
+   "score": 0.5155,
+   "n_subtasks": 62
+  },
+  "gsm8k": {
+   "score": 0.7626990144048522,
+   "flexible": 0.7695223654283548
+  }
+ },
+ "granite-4.2-30b": {
+  "smoke": {
+   "tok_per_s": 7.7,
+   "prompt_tokens": 25,
+   "n_predicted": 128,
+   "sanity": {
+    "math": {
+     "content": "372",
+     "reasoning_len": 1542,
+     "finish": "stop",
+     "secs": 27.3
+    },
+    "logic": {
+     "content": "",
+     "reasoning_len": 2638,
+     "finish": "length",
+     "secs": 45.7
+    },
+    "extract": {
+     "content": "{\n  \"nome\": \"Giuseppe Vitale\",\n  \"citta\": \"Brindisi\"\n}",
+     "reasoning_len": 1353,
+     "finish": "stop",
+     "secs": 24.1
+    },
+    "italian": {
+     "content": "",
+     "reasoning_len": 2863,
+     "finish": "length",
+     "secs": 45.3
+    }
+   }
+  }
+ }
+}

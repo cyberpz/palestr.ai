@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Palestr.ai — Local LLM Benchmarks</title>
+<style>
+:root{--bg:#0b0e14;--card:#131826;--fg:#e6e9f0;--mut:#8b93a7;--acc:#5eead4;--line:#232a3d}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:15px/1.6 ui-sans-serif,system-ui,Segoe UI,Roboto,sans-serif;padding:40px 20px;max-width:1080px;margin:0 auto}
+h1{font-size:28px;letter-spacing:.5px}
+h1 span{color:var(--acc)}
+.sub{color:var(--mut);margin:6px 0 28px}
+table{width:100%;border-collapse:collapse;background:var(--card);border-radius:10px;overflow:hidden;margin-bottom:28px}
+th,td{padding:10px 14px;text-align:right;border-bottom:1px solid var(--line)}
+th:first-child,td:first-child{text-align:left}
+th{background:#181f31;color:var(--mut);font-weight:600;font-size:12px;text-transform:uppercase;letter-spacing:.8px}
+td:first-child{font-weight:600}
+.best{color:var(--acc);font-weight:700}
+.pending{color:var(--mut)}
+.note{color:var(--mut);font-size:13px;margin-bottom:8px}
+a{color:var(--acc);text-decoration:none}
+footer{color:var(--mut);font-size:13px;margin-top:36px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<h1>Palestr<span>.ai</span></h1>
+<p class="sub">Reproducible local LLM benchmarks on consumer hardware — 2× RTX 3060 12GB, llama.cpp, GGUF Q4. Suite: MMLU (generative) · GSM8K · IFEval.</p>
+
+<table>
+<thead><tr><th>Model</th><th>Quant</th><th>MMLU-g</th><th>GSM8K</th><th>IFEval</th><th>tok/s</th></tr></thead>
+<tbody>
+<tr><td>Mellum2-12B-A2.5B-Thinking</td><td>Q4_K_M</td><td class="best">70.0</td><td class="best">81.1</td><td>27.2</td><td>120.5</td></tr>
+<tr><td>Spark-X2.5-4B</td><td>Q4_K_M</td><td>67.2</td><td>81.0</td><td>19.6</td><td>55.6</td></tr>
+<tr><td>MiniCPM5-2B (heretic-abliterated)</td><td>Q8_0</td><td>56.2</td><td>73.6</td><td class="best">34.4</td><td>100.0</td></tr>
+<tr><td>LFM2.5-24B-A2B</td><td>Q4_K_XL</td><td>54.3</td><td>76.5</td><td>25.7</td><td class="best">123.5</td></tr>
+<tr><td>Granite 4.2 3B</td><td>Q4_K_M</td><td>51.6</td><td>75.3</td><td class="pending">⏳</td><td>101.3</td></tr>
+<tr><td>Granite 4.2 8B</td><td>Q4_K_M</td><td>51.6</td><td>76.3</td><td class="pending">⏳</td><td>96.8</td></tr>
+<tr><td>Granite 4.2 30B</td><td>Q4_K_M</td><td class="pending">⏳</td><td class="pending">⏳</td><td class="pending">⏳</td><td>7.7</td></tr>
+<tr><td>Qwen3.8-27B</td><td>Q4_K_M</td><td class="pending">rerun</td><td>80.8</td><td class="best">50.8</td><td>45.5</td></tr>
+<tr><td>Qwen3.6-35B-A3B</td><td>IQ4_NL</td><td class="pending">rerun</td><td>69.1</td><td>32.9</td><td>41.1</td></tr>
+</tbody>
+</table>
+
+<p class="note">Scores are accuracy % (higher is better). tok/s measured on a 256-token smoke generation. ⏳ = in progress, rerun = protocol fix pending. See <a href="METHODOLOGY.md">methodology</a> for the full protocol (generative MMLU with letter-extraction regex, GSM8K with stop sequences, IFEval prompt-level strict).</p>
+
+<footer>Hardware: 2× RTX 3060 12GB · llama.cpp (Unsloth builds + LM Studio backend) · lm-eval 0.4.13 · Windows.<br>
+Data: <a href="https://github.com/cyberpz/palestr.ai/tree/master/results">/results</a> (per-model JSON) · Code: <a href="https://github.com/cyberpz/palestr.ai">palestr.ai</a> · Updated 2026-10-22</footer>
+</body>
+</html>
