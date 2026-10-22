@@ -10,7 +10,7 @@ Scores in %, `tok/s` from a 600-token throughput probe. `⏳` = run pending.
 
 | Model | Quant | MMLU-g | GSM8K | IFEval | tok/s |
 |---|---|---:|---:|---:|---:|
-| Mellum2-12B-A2.5B-Thinking | Q4_K_M | **70.0** | ⏳ | ⏳ | 120.5 |
+| Mellum2-12B-A2.5B-Thinking | Q4_K_M | **70.0** | **81.1** | 27.2 | 120.5 |
 | Spark-X2.5-4B | Q4_K_M | 67.2 | **81.0** | 19.6 | 55.6 |
 | MiniCPM5-2B (heretic-abliterated) | Q8_0 | 56.2 | 73.6 | 34.4 | 100.0 |
 | LFM2.5-24B-A2B | Q4_K_XL | 54.3 | 76.5 | 25.7 | **123.5** |
