@@ -1,4 +1,4 @@
-# Palestra — Local LLM Bench Lab
+# Palestr.ai — Local LLM Bench Lab
 
 Open-weight GGUF models benchmarked end-to-end on consumer hardware.
 Full suites (no subsampling), a fully documented generative protocol, and
