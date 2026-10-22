@@ -1,0 +1,103 @@
+{
+ "mmlu": {
+  "date": "2026-10-22",
+  "subtasks": {
+   "mmlu_abstract_algebra_generative": 0.54,
+   "mmlu_anatomy_generative": 0.637,
+   "mmlu_astronomy_generative": 0.7697,
+   "mmlu_college_biology_generative": 0.7986,
+   "mmlu_college_chemistry_generative": 0.53,
+   "mmlu_college_computer_science_generative": 0.63,
+   "mmlu_college_mathematics_generative": 0.5,
+   "mmlu_college_physics_generative": 0.5294,
+   "mmlu_computer_security_generative": 0.79,
+   "mmlu_conceptual_physics_generative": 0.6638,
+   "mmlu_electrical_engineering_generative": 0.6483,
+   "mmlu_elementary_mathematics_generative": 0.6561,
+   "mmlu_high_school_biology_generative": 0.8387,
+   "mmlu_high_school_chemistry_generative": 0.6798,
+   "mmlu_high_school_computer_science_generative": 0.83,
+   "mmlu_high_school_mathematics_generative": 0.4778,
+   "mmlu_high_school_physics_generative": 0.5364,
+   "mmlu_high_school_statistics_generative": 0.6343,
+   "mmlu_machine_learning_generative": 0.5536,
+   "mmlu_business_ethics_generative": 0.71,
+   "mmlu_clinical_knowledge_generative": 0.7396,
+   "mmlu_college_medicine_generative": 0.711,
+   "mmlu_global_facts_generative": 0.3,
+   "mmlu_human_aging_generative": 0.7175,
+   "mmlu_management_generative": 0.835,
+   "mmlu_marketing_generative": 0.8547,
+   "mmlu_medical_genetics_generative": 0.8,
+   "mmlu_miscellaneous_generative": 0.8008,
+   "mmlu_nutrition_generative": 0.7712,
+   "mmlu_professional_accounting_generative": 0.4752,
+   "mmlu_professional_medicine_generative": 0.7206,
+   "mmlu_virology_generative": 0.506,
+   "mmlu_econometrics_generative": 0.5614,
+   "mmlu_high_school_geography_generative": 0.8333,
+   "mmlu_high_school_government_and_politics_generative": 0.9016,
+   "mmlu_high_school_macroeconomics_generative": 0.7564,
+   "mmlu_high_school_microeconomics_generative": 0.8655,
+   "mmlu_high_school_psychology_generative": 0.8679,
+   "mmlu_human_sexuality_generative": 0.7328,
+   "mmlu_professional_psychology_generative": 0.701,
+   "mmlu_public_relations_generative": 0.6727,
+   "mmlu_security_studies_generative": 0.7469,
+   "mmlu_sociology_generative": 0.8756,
+   "mmlu_us_foreign_policy_generative": 0.83,
+   "mmlu_formal_logic_generative": 0.6111,
+   "mmlu_high_school_european_history_generative": 0.8061,
+   "mmlu_high_school_us_history_generative": 0.8235,
+   "mmlu_high_school_world_history_generative": 0.8017,
+   "mmlu_international_law_generative": 0.8099,
+   "mmlu_jurisprudence_generative": 0.7963,
+   "mmlu_logical_fallacies_generative": 0.681,
+   "mmlu_moral_disputes_generative": 0.7168,
+   "mmlu_moral_scenarios_generative": 0.5307,
+   "mmlu_philosophy_generative": 0.7138,
+   "mmlu_prehistory_generative": 0.7654,
+   "mmlu_professional_law_generative": 0.4987,
+   "mmlu_world_religions_generative": 0.848,
+   "mmlu_generative::stem": 0.653,
+   "mmlu_generative::other": 0.7155,
+   "mmlu_generative::social sciences": 0.7858,
+   "mmlu_generative::humanities": 0.6304,
+   "mmlu_generative": 0.6884
+  },
+  "score": 0.7001,
+  "n_subtasks": 62
+ },
+ "smoke": {
+  "date": "2026-10-22",
+  "tok_per_s": 120.5,
+  "prompt_tokens": 26,
+  "n_predicted": 128,
+  "sanity": {
+   "math": {
+    "content": "-18.2608695652",
+    "reasoning_len": 571,
+    "finish": "stop",
+    "secs": 2.0
+   },
+   "logic": {
+    "content": "Incerto. \n\n**Spiegazione:**  \n- Dalla prima affermazione (*Tutti i Blop sono Razz*), il set dei Blop \u00e8 incluso nel set dei Razz.  \n- Dalla seconda (*Alcuni Razz sono Fizz*), esiste almeno un elemento Razz-Fizz, ma non \u00e8 specificato che siano Blop.  \n- La terza affermazione (*Alcuni Blop sono Fizz*) richiede che tra i Razz-Fizz ci sia almeno un Blop. Tuttavia, i Razz-Fizz potrebbero essere tutti non-Blop (es. Razz = {Blop\u2081, Razz\u2082}, Fizz = {Razz\u2082}). In questo caso, la terza affermazione sarebbe fissa, ma non \u00e8 garantito dalle informazioni fornite.  \n- Poich\u00e9 non c'\u00e8 alcun collegamento diretto tra i Blop e i Fizz, la verit\u00e0 della terza affermazione dipende da elementi non specificati.  \n\n**Risposta:** Incerto.",
+    "reasoning_len": 1751,
+    "finish": "stop",
+    "secs": 6.2
+   },
+   "extract": {
+    "content": "{\"name\": \"John Doe\", \"city\": \"Rome\"}",
+    "reasoning_len": 938,
+    "finish": "stop",
+    "secs": 2.5
+   },
+   "italian": {
+    "content": "Si noto che il server non risponde pi\u00f9. Si prega di riattivarlo.",
+    "reasoning_len": 2505,
+    "finish": "stop",
+    "secs": 6.2
+   }
+  }
+ }
+}
