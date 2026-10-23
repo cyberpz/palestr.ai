@@ -1,14 +1,4 @@
 {
- "gsm8k": {
-  "date": "2026-10-20",
-  "score": 0.8081880212282032,
-  "flexible": 0.8097043214556482
- },
- "ifeval": {
-  "date": "2026-10-20",
-  "score": 0.5083179297597042,
-  "inst_strict": 0.6151079136690647
- },
  "smoke": {
   "date": "2026-10-19",
   "tok_per_s": 45.5,
@@ -28,7 +18,7 @@
     "secs": 9.1
    },
    "extract": {
-    "content": "{\n  \"nome\": \"John Doe\",\n  \"citta\": \"Rome\"\n}",
+    "content": "{\n  \"nome\": \"Giuseppe Vitale\",\n  \"citta\": \"Brindisi\"\n}",
     "reasoning_len": 342,
     "finish": "stop",
     "secs": 3.7
@@ -40,5 +30,15 @@
     "secs": 7.4
    }
   }
+ },
+ "gsm8k": {
+  "date": "2026-10-20",
+  "score": 0.8081880212282032,
+  "flexible": 0.8097043214556482
+ },
+ "ifeval": {
+  "date": "2026-10-20",
+  "score": 0.5083179297597042,
+  "inst_strict": 0.6151079136690647
  }
 }

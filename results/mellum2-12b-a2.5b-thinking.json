@@ -1,13 +1,29 @@
 {
- "gsm8k": {
-  "date": "2026-10-22",
-  "score": 0.8112206216830933,
-  "flexible": 0.8112206216830933
- },
- "ifeval": {
-  "date": "2026-10-22",
-  "score": 0.27171903881700554,
-  "inst_strict": 0.41606714628297364
+ "smoke": {
+  "date": "2026-10-19",
+  "tok_per_s": 1.0,
+  "prompt_tokens": 26,
+  "n_predicted": 128,
+  "sanity": {
+   "math": {
+    "content": "-18.2608695652",
+    "reasoning_len": 571,
+    "finish": "stop",
+    "secs": 251.4
+   },
+   "logic": {
+    "error": "timed out"
+   },
+   "extract": {
+    "content": "{\n  \"name\": \"Giuseppe Vitale\",\n  \"city\": \"Brindisi\"\n}",
+    "reasoning_len": 858,
+    "finish": "stop",
+    "secs": 297.1
+   },
+   "italian": {
+    "error": "timed out"
+   }
+  }
  },
  "mmlu": {
   "date": "2026-10-22",
@@ -78,36 +94,14 @@
   "score": 0.7001,
   "n_subtasks": 62
  },
- "smoke": {
+ "gsm8k": {
   "date": "2026-10-22",
-  "tok_per_s": 120.5,
-  "prompt_tokens": 26,
-  "n_predicted": 128,
-  "sanity": {
-   "math": {
-    "content": "-18.2608695652",
-    "reasoning_len": 571,
-    "finish": "stop",
-    "secs": 2.0
-   },
-   "logic": {
-    "content": "Incerto. \n\n**Spiegazione:**  \n- Dalla prima affermazione (*Tutti i Blop sono Razz*), il set dei Blop \u00e8 incluso nel set dei Razz.  \n- Dalla seconda (*Alcuni Razz sono Fizz*), esiste almeno un elemento Razz-Fizz, ma non \u00e8 specificato che siano Blop.  \n- La terza affermazione (*Alcuni Blop sono Fizz*) richiede che tra i Razz-Fizz ci sia almeno un Blop. Tuttavia, i Razz-Fizz potrebbero essere tutti non-Blop (es. Razz = {Blop\u2081, Razz\u2082}, Fizz = {Razz\u2082}). In questo caso, la terza affermazione sarebbe fissa, ma non \u00e8 garantito dalle informazioni fornite.  \n- Poich\u00e9 non c'\u00e8 alcun collegamento diretto tra i Blop e i Fizz, la verit\u00e0 della terza affermazione dipende da elementi non specificati.  \n\n**Risposta:** Incerto.",
-    "reasoning_len": 1751,
-    "finish": "stop",
-    "secs": 6.2
-   },
-   "extract": {
-    "content": "{\"name\": \"John Doe\", \"city\": \"Rome\"}",
-    "reasoning_len": 938,
-    "finish": "stop",
-    "secs": 2.5
-   },
-   "italian": {
-    "content": "Si noto che il server non risponde pi\u00f9. Si prega di riattivarlo.",
-    "reasoning_len": 2505,
-    "finish": "stop",
-    "secs": 6.2
-   }
-  }
+  "score": 0.8112206216830933,
+  "flexible": 0.8112206216830933
+ },
+ "ifeval": {
+  "date": "2026-10-22",
+  "score": 0.27171903881700554,
+  "inst_strict": 0.41606714628297364
  }
 }

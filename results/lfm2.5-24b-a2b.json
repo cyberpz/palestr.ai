@@ -1,13 +1,35 @@
 {
- "gsm8k": {
+ "smoke": {
   "date": "2026-10-22",
-  "score": 0.7649734647460197,
-  "flexible": 0.7649734647460197
- },
- "ifeval": {
-  "date": "2026-10-22",
-  "score": 0.25693160813308685,
-  "inst_strict": 0.39688249400479614
+  "tok_per_s": 123.5,
+  "prompt_tokens": 24,
+  "n_predicted": 128,
+  "sanity": {
+   "math": {
+    "content": "\n\n372",
+    "reasoning_len": 1974,
+    "finish": "stop",
+    "secs": 3.8
+   },
+   "logic": {
+    "content": "",
+    "reasoning_len": 2828,
+    "finish": "length",
+    "secs": 6.5
+   },
+   "extract": {
+    "content": "\n\n{\n  \"nome\": \"Giuseppe Vitale\",\n  \"citta\": \"Brindisi\"\n}",
+    "reasoning_len": 867,
+    "finish": "stop",
+    "secs": 2.1
+   },
+   "italian": {
+    "content": "\n\nIn merito al malfunzionamento del server, si segnala che il servizio \u00e8 attualmente inattivo. Si prega di provvedere alla riparazione o al ripristino del sistema.",
+    "reasoning_len": 1177,
+    "finish": "stop",
+    "secs": 2.8
+   }
+  }
  },
  "mmlu": {
   "date": "2026-10-22",
@@ -78,36 +100,14 @@
   "score": 0.543,
   "n_subtasks": 62
  },
- "smoke": {
+ "gsm8k": {
   "date": "2026-10-22",
-  "tok_per_s": 123.5,
-  "prompt_tokens": 24,
-  "n_predicted": 128,
-  "sanity": {
-   "math": {
-    "content": "\n\n372",
-    "reasoning_len": 1974,
-    "finish": "stop",
-    "secs": 3.8
-   },
-   "logic": {
-    "content": "",
-    "reasoning_len": 2828,
-    "finish": "length",
-    "secs": 6.5
-   },
-   "extract": {
-    "content": "\n\n{\n  \"nome\": \"John Doe\",\n  \"citta\": \"Rome\"\n}",
-    "reasoning_len": 867,
-    "finish": "stop",
-    "secs": 2.1
-   },
-   "italian": {
-    "content": "\n\nIn merito al malfunzionamento del server, si segnala che il servizio \u00e8 attualmente inattivo. Si prega di provvedere alla riparazione o al ripristino del sistema.",
-    "reasoning_len": 1177,
-    "finish": "stop",
-    "secs": 2.8
-   }
-  }
+  "score": 0.7649734647460197,
+  "flexible": 0.7649734647460197
+ },
+ "ifeval": {
+  "date": "2026-10-22",
+  "score": 0.25693160813308685,
+  "inst_strict": 0.39688249400479614
  }
 }

@@ -1,14 +1,4 @@
 {
- "gsm8k": {
-  "date": "2026-10-20",
-  "score": 0.6914329037149356,
-  "flexible": 0.6224412433661866
- },
- "ifeval": {
-  "date": "2026-10-20",
-  "score": 0.3290203327171904,
-  "inst_strict": 0.4568345323741007
- },
  "smoke": {
   "date": "2026-10-20",
   "tok_per_s": 41.1,
@@ -28,7 +18,7 @@
     "secs": 13.4
    },
    "extract": {
-    "content": "```json\n{\n  \"nome\": \"John Doe\",\n  \"citt\u00e0\": \"Rome\"\n}\n```",
+    "content": "```json\n{\n  \"nome\": \"Giuseppe Vitale\",\n  \"citt\u00e0\": \"Brindisi\"\n}\n```",
     "reasoning_len": 1130,
     "finish": "stop",
     "secs": 6.3
@@ -40,5 +30,15 @@
     "secs": 15.0
    }
   }
+ },
+ "gsm8k": {
+  "date": "2026-10-20",
+  "score": 0.6914329037149356,
+  "flexible": 0.6224412433661866
+ },
+ "ifeval": {
+  "date": "2026-10-20",
+  "score": 0.3290203327171904,
+  "inst_strict": 0.4568345323741007
  }
 }

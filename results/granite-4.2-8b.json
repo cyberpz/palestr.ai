@@ -1,0 +1,110 @@
+{
+ "smoke": {
+  "date": "2026-10-22",
+  "tok_per_s": 96.8,
+  "prompt_tokens": 25,
+  "n_predicted": 128,
+  "sanity": {
+   "math": {
+    "content": "372",
+    "reasoning_len": 780,
+    "finish": "stop",
+    "secs": 3.8
+   },
+   "logic": {
+    "content": "",
+    "reasoning_len": 2982,
+    "finish": "length",
+    "secs": 10.1
+   },
+   "extract": {
+    "content": "{\n  \"nome\": \"Giuseppe Vitale\",\n  \"citta\": \"Brindisi\"\n}",
+    "reasoning_len": 844,
+    "finish": "stop",
+    "secs": 5.6
+   },
+   "italian": {
+    "error": "[WinError 10054] Connessione in corso interrotta forzatamente dall'host remoto"
+   }
+  }
+ },
+ "mmlu": {
+  "date": "2026-10-22",
+  "subtasks": {
+   "mmlu_abstract_algebra_generative": 0.25,
+   "mmlu_anatomy_generative": 0.5259,
+   "mmlu_astronomy_generative": 0.6974,
+   "mmlu_college_biology_generative": 0.5833,
+   "mmlu_college_chemistry_generative": 0.38,
+   "mmlu_college_computer_science_generative": 0.39,
+   "mmlu_college_mathematics_generative": 0.26,
+   "mmlu_college_physics_generative": 0.3627,
+   "mmlu_computer_security_generative": 0.61,
+   "mmlu_conceptual_physics_generative": 0.566,
+   "mmlu_electrical_engineering_generative": 0.531,
+   "mmlu_elementary_mathematics_generative": 0.3942,
+   "mmlu_high_school_biology_generative": 0.6613,
+   "mmlu_high_school_chemistry_generative": 0.468,
+   "mmlu_high_school_computer_science_generative": 0.55,
+   "mmlu_high_school_mathematics_generative": 0.2852,
+   "mmlu_high_school_physics_generative": 0.4172,
+   "mmlu_high_school_statistics_generative": 0.4583,
+   "mmlu_machine_learning_generative": 0.3393,
+   "mmlu_business_ethics_generative": 0.47,
+   "mmlu_clinical_knowledge_generative": 0.5925,
+   "mmlu_college_medicine_generative": 0.4855,
+   "mmlu_global_facts_generative": 0.38,
+   "mmlu_human_aging_generative": 0.5874,
+   "mmlu_management_generative": 0.6796,
+   "mmlu_marketing_generative": 0.765,
+   "mmlu_medical_genetics_generative": 0.54,
+   "mmlu_miscellaneous_generative": 0.7063,
+   "mmlu_nutrition_generative": 0.6275,
+   "mmlu_professional_accounting_generative": 0.4078,
+   "mmlu_professional_medicine_generative": 0.5515,
+   "mmlu_virology_generative": 0.4398,
+   "mmlu_econometrics_generative": 0.3246,
+   "mmlu_high_school_geography_generative": 0.702,
+   "mmlu_high_school_government_and_politics_generative": 0.6632,
+   "mmlu_high_school_macroeconomics_generative": 0.5513,
+   "mmlu_high_school_microeconomics_generative": 0.6261,
+   "mmlu_high_school_psychology_generative": 0.7908,
+   "mmlu_human_sexuality_generative": 0.5802,
+   "mmlu_professional_psychology_generative": 0.4918,
+   "mmlu_public_relations_generative": 0.5818,
+   "mmlu_security_studies_generative": 0.5959,
+   "mmlu_sociology_generative": 0.7264,
+   "mmlu_us_foreign_policy_generative": 0.71,
+   "mmlu_formal_logic_generative": 0.3571,
+   "mmlu_high_school_european_history_generative": 0.3939,
+   "mmlu_high_school_us_history_generative": 0.4951,
+   "mmlu_high_school_world_history_generative": 0.4219,
+   "mmlu_international_law_generative": 0.5537,
+   "mmlu_jurisprudence_generative": 0.5463,
+   "mmlu_logical_fallacies_generative": 0.6196,
+   "mmlu_moral_disputes_generative": 0.5231,
+   "mmlu_moral_scenarios_generative": 0.0179,
+   "mmlu_philosophy_generative": 0.5981,
+   "mmlu_prehistory_generative": 0.6142,
+   "mmlu_professional_law_generative": 0.2777,
+   "mmlu_world_religions_generative": 0.7076,
+   "mmlu_generative::stem": 0.4688,
+   "mmlu_generative::other": 0.5932,
+   "mmlu_generative::social sciences": 0.6185,
+   "mmlu_generative::humanities": 0.3543,
+   "mmlu_generative": 0.4907
+  },
+  "score": 0.5155,
+  "n_subtasks": 62
+ },
+ "gsm8k": {
+  "date": "2026-10-22",
+  "score": 0.7626990144048522,
+  "flexible": 0.7695223654283548
+ },
+ "ifeval": {
+  "date": "2026-10-23",
+  "score": 0.2587800369685767,
+  "inst_strict": 0.39928057553956836
+ }
+}

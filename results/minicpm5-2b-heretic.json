@@ -1,13 +1,35 @@
 {
- "gsm8k": {
-  "date": "2026-10-19",
-  "score": 0.7361637604245641,
-  "flexible": 0.5473843821076573
- },
- "ifeval": {
-  "date": "2026-10-19",
-  "score": 0.3438077634011091,
-  "inst_strict": 0.49160671462829736
+ "smoke": {
+  "date": "2026-10-18",
+  "tok_per_s": 100.0,
+  "prompt_tokens": 28,
+  "n_predicted": 128,
+  "sanity": {
+   "math": {
+    "content": "Raggionamento: 17 - 23 = -6. Poi -6 - 19 = -25.\nRisposta: -25",
+    "reasoning_len": 2282,
+    "finish": "stop",
+    "secs": 6.7
+   },
+   "logic": {
+    "content": "Le affermazioni non hanno informazioni aggiuntive, quindi non possiamo determinare se siano vere, false o incerte. La risposta \u00e8 incerto.",
+    "reasoning_len": 1102,
+    "finish": "stop",
+    "secs": 3.3
+   },
+   "extract": {
+    "content": "{\n  \"name\": \"Giuseppe Vitale\",\n  \"city\": \"Brindisi\"\n}",
+    "reasoning_len": 324,
+    "finish": "stop",
+    "secs": 1.0
+   },
+   "italian": {
+    "content": "",
+    "reasoning_len": 2926,
+    "finish": "length",
+    "secs": 7.4
+   }
+  }
  },
  "mmlu": {
   "date": "2026-10-19",
@@ -78,36 +100,14 @@
   "score": 0.562,
   "n_subtasks": 62
  },
- "smoke": {
-  "date": "2026-10-18",
-  "tok_per_s": 100.0,
-  "prompt_tokens": 28,
-  "n_predicted": 128,
-  "sanity": {
-   "math": {
-    "content": "Raggionamento: 17 - 23 = -6. Poi -6 - 19 = -25.\nRisposta: -25",
-    "reasoning_len": 2282,
-    "finish": "stop",
-    "secs": 6.7
-   },
-   "logic": {
-    "content": "Le affermazioni non hanno informazioni aggiuntive, quindi non possiamo determinare se siano vere, false o incerte. La risposta \u00e8 incerto.",
-    "reasoning_len": 1102,
-    "finish": "stop",
-    "secs": 3.3
-   },
-   "extract": {
-    "content": "{\n  \"name\": \"John Doe\",\n  \"city\": \"Rome\"\n}",
-    "reasoning_len": 324,
-    "finish": "stop",
-    "secs": 1.0
-   },
-   "italian": {
-    "content": "",
-    "reasoning_len": 2926,
-    "finish": "length",
-    "secs": 7.4
-   }
-  }
+ "gsm8k": {
+  "date": "2026-10-19",
+  "score": 0.7361637604245641,
+  "flexible": 0.5473843821076573
+ },
+ "ifeval": {
+  "date": "2026-10-19",
+  "score": 0.3438077634011091,
+  "inst_strict": 0.49160671462829736
  }
 }

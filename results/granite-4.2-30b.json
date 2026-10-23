@@ -1,0 +1,34 @@
+{
+ "smoke": {
+  "date": "2026-10-23",
+  "tok_per_s": 17.5,
+  "prompt_tokens": 25,
+  "n_predicted": 128,
+  "sanity": {
+   "math": {
+    "content": "372",
+    "reasoning_len": 1542,
+    "finish": "stop",
+    "secs": 27.1
+   },
+   "logic": {
+    "content": "",
+    "reasoning_len": 2638,
+    "finish": "length",
+    "secs": 45.1
+   },
+   "extract": {
+    "content": "{\n  \"nome\": \"Giuseppe Vitale\",\n  \"citta\": \"Brindisi\"\n}",
+    "reasoning_len": 1353,
+    "finish": "stop",
+    "secs": 23.9
+   },
+   "italian": {
+    "content": "",
+    "reasoning_len": 2863,
+    "finish": "length",
+    "secs": 45.1
+   }
+  }
+ }
+}
