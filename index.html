@@ -3,30 +3,60 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Palestr.ai — Local LLM Benchmarks</title>
+<title>PALESTR.AI // LOCAL LLM BENCHMARKS</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#0b0e14;--card:#131826;--fg:#e6e9f0;--mut:#8b93a7;--acc:#5eead4;--line:#232a3d}
+:root{
+--bg:#000a00;--surface:#000f05;--surface2:#001a08;--green:#00ff41;--green-dim:#00aa28;
+--green-glow:rgba(0,255,65,.12);--cyan:#00d4ff;--red:#ff1f4b;--amber:#ffb300;
+--text:#aaffaa;--text-dim:#447744;--border:rgba(0,255,65,.18);--border-bright:rgba(0,255,65,.55)}
 *{box-sizing:border-box;margin:0;padding:0}
-body{background:var(--bg);color:var(--fg);font:15px/1.6 ui-sans-serif,system-ui,Segoe UI,Roboto,sans-serif;padding:40px 20px;max-width:1080px;margin:0 auto}
-h1{font-size:28px;letter-spacing:.5px}
-h1 span{color:var(--acc)}
-.sub{color:var(--mut);margin:6px 0 28px}
-table{width:100%;border-collapse:collapse;background:var(--card);border-radius:10px;overflow:hidden;margin-bottom:28px}
-th,td{padding:10px 14px;text-align:right;border-bottom:1px solid var(--line)}
+body{background:var(--bg);color:var(--text);font:14px/1.6 'JetBrains Mono',monospace;
+min-height:100vh;padding:36px 20px;position:relative}
+body::before{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;
+background:linear-gradient(rgba(0,255,65,.05) 1px,transparent 1px),
+linear-gradient(90deg,rgba(0,255,65,.05) 1px,transparent 1px);background-size:40px 40px}
+body::after{content:'';position:fixed;inset:0;z-index:99;pointer-events:none;
+background:repeating-linear-gradient(0deg,rgba(0,0,0,.15) 0 1px,transparent 1px 3px)}
+.wrap{max-width:1080px;margin:0 auto;position:relative;z-index:1}
+h1{color:var(--green);font-size:26px;letter-spacing:3px;text-shadow:0 0 12px var(--green-glow)}
+h1 .sys{color:var(--text-dim);font-weight:400}
+.sub{color:var(--text-dim);margin:6px 0 26px;font-size:13px}
+.sub b{color:var(--green-dim)}
+h2{color:var(--green);font-size:13px;letter-spacing:3px;margin:34px 0 12px;
+border-bottom:1px solid var(--border);padding-bottom:6px}
+h2::before{content:'▸ '}
+table{width:100%;border-collapse:collapse;background:var(--surface);border:1px solid var(--border)}
+th,td{padding:9px 12px;text-align:right;border-bottom:1px solid rgba(0,255,65,.08)}
 th:first-child,td:first-child{text-align:left}
-th{background:#181f31;color:var(--mut);font-weight:600;font-size:12px;text-transform:uppercase;letter-spacing:.8px}
-td:first-child{font-weight:600}
-.best{color:var(--acc);font-weight:700}
-.pending{color:var(--mut)}
-.note{color:var(--mut);font-size:13px;margin-bottom:8px}
-a{color:var(--acc);text-decoration:none}
-footer{color:var(--mut);font-size:13px;margin-top:36px;border-top:1px solid var(--line);padding-top:16px}
+th{background:var(--surface2);color:var(--green-dim);font-weight:700;font-size:11px;
+text-transform:uppercase;letter-spacing:1.5px}
+td:first-child{color:var(--text);font-weight:600}
+.best{color:var(--green);font-weight:700;text-shadow:0 0 8px var(--green-glow)}
+.pending{color:var(--amber)}
+.bm{border:1px solid var(--border);background:var(--surface);padding:14px 16px;margin-bottom:10px}
+.bm h3{color:var(--cyan);font-size:13px;letter-spacing:1px;margin-bottom:6px}
+.bm h3::before{content:'[ ';color:var(--text-dim)}
+.bm h3::after{content:' ]';color:var(--text-dim)}
+.bm p{font-size:13px;color:var(--text)}
+.bm .tag{color:var(--green-dim);text-transform:uppercase;font-size:10px;letter-spacing:2px}
+a{color:var(--cyan);text-decoration:none;border-bottom:1px dotted var(--cyan)}
+a:hover{color:var(--green);border-bottom-color:var(--green)}
+footer{color:var(--text-dim);font-size:12px;margin-top:36px;border-top:1px solid var(--border);padding-top:14px}
+.cursor{display:inline-block;width:9px;height:15px;background:var(--green);vertical-align:-2px;
+animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+::selection{background:var(--green);color:#000}
+::-webkit-scrollbar{width:10px}::-webkit-scrollbar-thumb{background:var(--green-dim)}
 </style>
 </head>
 <body>
-<h1>Palestr<span>.ai</span></h1>
-<p class="sub">Reproducible local LLM benchmarks on consumer hardware — 2× RTX 3060 12GB, llama.cpp, GGUF Q4. Suite: MMLU (generative) · GSM8K · IFEval.</p>
+<div class="wrap">
+<h1>PALESTR.AI <span class="sys">// LOCAL LLM BENCHMARKS</span><span class="cursor"></span></h1>
+<p class="sub">Reproducible benchmarks on consumer hardware — <b>2× RTX 3060 12GB</b> · llama.cpp · GGUF Q4 · suite: <b>MMLU-g · GSM8K · IFEval</b></p>
 
+<h2>RESULTS</h2>
 <table>
 <thead><tr><th>Model</th><th>Quant</th><th>MMLU-g</th><th>GSM8K</th><th>IFEval</th><th>tok/s</th></tr></thead>
 <tbody>
@@ -37,15 +67,24 @@ footer{color:var(--mut);font-size:13px;margin-top:36px;border-top:1px solid var(
 <tr><td>LFM2.5-24B-A2B</td><td>Q4_K_XL</td><td>54.3</td><td>76.5</td><td>25.7</td><td class="best">123.5</td></tr>
 <tr><td>Granite 4.2 3B</td><td>Q4_K_M</td><td>51.6</td><td>75.3</td><td>26.1</td><td>101.3</td></tr>
 <tr><td>Granite 4.2 8B</td><td>Q4_K_M</td><td>51.6</td><td>76.3</td><td>25.9</td><td>96.8</td></tr>
-<tr><td>Granite 4.2 30B</td><td>Q4_K_M</td><td class="pending">⏳</td><td class="pending">⏳</td><td class="pending">⏳</td><td>17.5</td></tr>
-<tr><td>Qwen3.8-27B</td><td>Q4_K_M</td><td class="pending">rerun</td><td>80.8</td><td class="best">50.8</td><td>45.5</td></tr>
-<tr><td>Qwen3.6-35B-A3B</td><td>IQ4_NL</td><td class="pending">rerun</td><td>69.1</td><td>32.9</td><td>41.1</td></tr>
+<tr><td>Granite 4.2 30B</td><td>Q4_K_M</td><td class="pending">RUNNING</td><td class="pending">RUNNING</td><td class="pending">RUNNING</td><td>17.5</td></tr>
+<tr><td>Qwen3.8-27B</td><td>Q4_K_M</td><td class="pending">RERUN</td><td>80.8</td><td class="best">50.8</td><td>45.5</td></tr>
+<tr><td>Qwen3.6-35B-A3B</td><td>IQ4_NL</td><td class="pending">RERUN</td><td>69.1</td><td>32.9</td><td>41.1</td></tr>
 </tbody>
 </table>
 
-<p class="note">Scores are accuracy % (higher is better). tok/s measured on a 256-token smoke generation. ⏳ = in progress, rerun = protocol fix pending. See <a href="METHODOLOGY.md">methodology</a> for the full protocol (generative MMLU with letter-extraction regex, GSM8K with stop sequences, IFEval prompt-level strict).</p>
+<h2>WHAT THE BENCHMARKS MEASURE</h2>
+<div class="bm"><h3>MMLU-g</h3><span class="tag">general knowledge · 14,043 questions · 57 subjects</span>
+<p>Multiple-choice across science, law, medicine, history, ethics. Generative variant: the model must <b>produce</b> the answer letter, extracted with a strict word-boundary regex. Tests knowledge recall and the ability to deliver it in the requested format.</p></div>
+<div class="bm"><h3>GSM8K</h3><span class="tag">multi-step reasoning · 1,319 problems</span>
+<p>Grade-school word problems needing 2–8 arithmetic steps. A clean proxy for "can this model follow a logical procedure without derailing" — separates reasoning-tuned models from pure knowledge models.</p></div>
+<div class="bm"><h3>IFEval</h3><span class="tag">instruction following · 541 constraints</span>
+<p>Instructions with programmatically checkable constraints (exact bullet counts, required words, length limits). Low IFEval + high MMLU = a knowledgeable model you cannot steer. The reliability metric for automation.</p></div>
+<div class="bm"><h3>tok/s</h3><span class="tag">throughput</span>
+<p>Generation speed on a fixed smoke probe. On consumer VRAM, speed is a first-class citizen: a 4× faster model is often the right answer at a small quality cost.</p></div>
 
-<footer>Hardware: 2× RTX 3060 12GB · llama.cpp (Unsloth builds + LM Studio backend) · lm-eval 0.4.13 · Windows.<br>
-Data: <a href="https://github.com/cyberpz/palestr.ai/tree/master/results">/results</a> (per-model JSON) · Code: <a href="https://github.com/cyberpz/palestr.ai">palestr.ai</a> · Updated 2026-10-23</footer>
+<footer>Hardware: 2× RTX 3060 12GB · llama.cpp (Unsloth + LM Studio backends) · lm-eval 0.4.13 · Windows 11.<br>
+Data: <a href="https://github.com/cyberpz/palestr.ai/tree/master/results">/results</a> · Code &amp; methodology: <a href="https://github.com/cyberpz/palestr.ai">palestr.ai</a> · Updated 2026-10-23</footer>
+</div>
 </body>
 </html>
