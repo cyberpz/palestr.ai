@@ -24,6 +24,36 @@ Scores in %, `tok/s` from a 600-token throughput probe. `⏳` = run pending.
 Raw per-model JSON in [`results/`](results/). Scores are single runs,
 greedy-ish decoding per task config (see [METHODOLOGY.md](METHODOLOGY.md)).
 
+## What the benchmarks measure
+
+**MMLU-g (generative MMLU)** — *general knowledge and broad reasoning.*
+14,043 multiple-choice questions across 57 subjects (elementary math, US
+history, computer science, law, medicine, ethics…). We run the generative
+variant: the model reads the question and must **produce** the letter of the
+correct answer, which is then extracted with a strict word-boundary regex.
+This tests both knowledge recall and instruction-shaped output — a model can
+know the answer and still fail to deliver it in the requested format.
+Higher = better.
+
+**GSM8K** — *grade-school math, i.e. multi-step reasoning.*
+1,319 word problems that each require 2–8 arithmetic steps. The model must
+show a chain of reasoning and land on the exact numeric answer. It is a
+clean proxy for "can this model follow a logical procedure without
+derailing", and it separates reasoning-tuned models from pure knowledge
+models. Higher = better.
+
+**IFEval** — *instruction following, the reliability benchmark.*
+541 instructions with a programmatically checkable constraint ("answer in
+exactly 3 bullet points", "include the word X", "respond in under 50
+words"…). No knowledge involved: the score is the fraction of constraints
+the output actually obeys (prompt-level, strict). This is the closest thing
+to "will this model do what my automation asks" — a low IFEval with a high
+MMLU means a knowledgeable model you cannot steer. Higher = better.
+
+**tok/s** — raw generation throughput on a fixed smoke probe. On consumer
+VRAM, speed is a first-class citizen: a 4× faster model is often the right
+answer even at a small quality cost.
+
 ## Test rig
 
 | | |
