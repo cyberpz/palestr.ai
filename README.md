@@ -17,7 +17,7 @@ Scores in %, `tok/s` from a 600-token throughput probe. `⏳` = run pending.
 | LFM2.5-24B-A2B | Q4_K_XL | 54.3 | 76.5 | 25.7 | **123.5** |
 | Granite 4.2 3B | Q4_K_M | 51.6 | 75.3 | 26.1 | 101.3 |
 | Granite 4.2 8B | Q4_K_M | 51.6 | 76.3 | 25.9 | 96.8 |
-| Granite 4.2 30B | Q4_K_M | ⏳ | ⏳ | ⏳ | 17.5 |
+| Granite 4.2 30B | Q4_K_M | 69.0 | 89.3 | ⏳ | 17.5 |
 | Qwen3.8-27B | Q4_K_M | ⏳ | 80.8 | **50.8** | 45.5 |
 | Qwen3.6-35B-A3B | IQ4_NL | ⏳ | 69.1 | 32.9 | 41.1 |
 | Dory1.0-4B (NVIDIA) | Q5_K_M | sched | sched | sched | — |
