@@ -1,0 +1,113 @@
+{
+ "smoke": {
+  "date": "2026-10-25",
+  "tok_per_s": 37.8,
+  "prompt_tokens": 23,
+  "n_predicted": 91,
+  "sanity": {
+   "math": {
+    "content": "(17 × 23) = 391\n391 − 19 = **372**",
+    "reasoning_len": 0,
+    "finish": "stop",
+    "secs": 1.1
+   },
+   "logic": {
+    "content": "Analizziamo le affermazioni passo dopo passo usando la logica delle implicazioni e delle relazioni tra i termini:\n\n1. **Tutti i Blop sono Razz**\n   Questo significa che se qualcosa è un Blop, allora è sicuramente un Razz.\n   In simboli: Blop → Razz\n\n2. **Alcuni Razz sono Fizz**\n   Questo significa che esiste almeno un Razz che è anche Fizz.\n   In simboli: ∃x (Razz(x) ∧ Fizz(x))\n\n3. **Alcuni Blop sono Fizz**\n   Questo significa che esiste almeno un Blop che è anche Fizz.\n   In simboli: ∃x (Blop(x) ∧ Fizz(x))\n\nOra verifichiamo se queste tre affermazioni possono essere tutte vere contemporaneamente:\n\n- Poiché **tutti i Blop sono Razz**, se esiste un Blop che è anche Fizz, allora esiste anche un Razz che è Fizz (perché quel Blop è un Razz).\n- Le altre due affermazioni (\"Alcuni Razz sono Fizz\" e \"Alcuni Blop sono Fizz\") sono quindi **coerenti** tra loro e non si contraddicono.\n\n**Conclusione**: Le tre affermazioni possono essere **tutte vere** contemporaneamente.\nQuindi la risposta è **vero**.",
+    "reasoning_len": 0,
+    "finish": "stop",
+    "secs": 7.5
+   },
+   "extract": {
+    "content": "Ecco il risultato in formato JSON:\n\n```json\n{\n  \"persone\": [\n    {\n      \"nome\": \"Giuseppe Vitale\",\n      \"citta\": \"Brindisi\",\n      \"importo_fatturato\": 100,\n      \"valuta\": \"euro\"\n    }\n  ]\n}\n```",
+    "reasoning_len": 0,
+    "finish": "stop",
+    "secs": 1.8
+   },
+   "italian": {
+    "content": "Ecco la versione in italiano formale della frase:\n\n**\"Mi scusi, il server sembra non rispondere; potrebbe riprovare, per favore?\"**\n\nSe il contesto è più tecnico o formale (ad esempio in un supporto IT), si potrebbe anche dire:\n**\"Purtroppo il server non risponde attualmente; le consiglio di riprovare più tardi.\"**",
+    "reasoning_len": 0,
+    "finish": "stop",
+    "secs": 2.2
+   }
+  }
+ },
+ "mmlu": {
+  "date": "2026-10-25",
+  "subtasks": {
+   "mmlu_abstract_algebra_generative": 0.54,
+   "mmlu_anatomy_generative": 0.7481,
+   "mmlu_astronomy_generative": 0.8816,
+   "mmlu_college_biology_generative": 0.8958,
+   "mmlu_college_chemistry_generative": 0.58,
+   "mmlu_college_computer_science_generative": 0.66,
+   "mmlu_college_mathematics_generative": 0.52,
+   "mmlu_college_physics_generative": 0.5784,
+   "mmlu_computer_security_generative": 0.8,
+   "mmlu_conceptual_physics_generative": 0.7787,
+   "mmlu_electrical_engineering_generative": 0.7103,
+   "mmlu_elementary_mathematics_generative": 0.7037,
+   "mmlu_high_school_biology_generative": 0.8935,
+   "mmlu_high_school_chemistry_generative": 0.7143,
+   "mmlu_high_school_computer_science_generative": 0.77,
+   "mmlu_high_school_mathematics_generative": 0.4778,
+   "mmlu_high_school_physics_generative": 0.6159,
+   "mmlu_high_school_statistics_generative": 0.7222,
+   "mmlu_machine_learning_generative": 0.5625,
+   "mmlu_business_ethics_generative": 0.8,
+   "mmlu_clinical_knowledge_generative": 0.8038,
+   "mmlu_college_medicine_generative": 0.7399,
+   "mmlu_global_facts_generative": 0.59,
+   "mmlu_human_aging_generative": 0.7713,
+   "mmlu_management_generative": 0.8932,
+   "mmlu_marketing_generative": 0.9274,
+   "mmlu_medical_genetics_generative": 0.88,
+   "mmlu_miscellaneous_generative": 0.8621,
+   "mmlu_nutrition_generative": 0.8039,
+   "mmlu_professional_accounting_generative": 0.5993,
+   "mmlu_professional_medicine_generative": 0.8235,
+   "mmlu_virology_generative": 0.5723,
+   "mmlu_econometrics_generative": 0.614,
+   "mmlu_high_school_geography_generative": 0.8838,
+   "mmlu_high_school_government_and_politics_generative": 0.9482,
+   "mmlu_high_school_macroeconomics_generative": 0.7462,
+   "mmlu_high_school_microeconomics_generative": 0.8739,
+   "mmlu_high_school_psychology_generative": 0.9156,
+   "mmlu_human_sexuality_generative": 0.8855,
+   "mmlu_professional_psychology_generative": 0.7941,
+   "mmlu_public_relations_generative": 0.7455,
+   "mmlu_security_studies_generative": 0.7918,
+   "mmlu_sociology_generative": 0.8856,
+   "mmlu_us_foreign_policy_generative": 0.93,
+   "mmlu_formal_logic_generative": 0.5556,
+   "mmlu_high_school_european_history_generative": 0.8182,
+   "mmlu_high_school_us_history_generative": 0.9069,
+   "mmlu_high_school_world_history_generative": 0.865,
+   "mmlu_international_law_generative": 0.8512,
+   "mmlu_jurisprudence_generative": 0.8056,
+   "mmlu_logical_fallacies_generative": 0.8528,
+   "mmlu_moral_disputes_generative": 0.7977,
+   "mmlu_moral_scenarios_generative": 0.3162,
+   "mmlu_philosophy_generative": 0.7588,
+   "mmlu_prehistory_generative": 0.787,
+   "mmlu_professional_law_generative": 0.5339,
+   "mmlu_world_religions_generative": 0.8538,
+   "mmlu_generative::stem": 0.7057,
+   "mmlu_generative::other": 0.7911,
+   "mmlu_generative::social sciences": 0.8369,
+   "mmlu_generative::humanities": 0.6247,
+   "mmlu_generative": 0.7262
+  },
+  "score": 0.752,
+  "n_subtasks": 62
+ },
+ "gsm8k": {
+  "date": "2026-10-25",
+  "score": 0.866565579984837,
+  "flexible": 0.866565579984837
+ },
+ "ifeval": {
+  "date": "2026-10-25",
+  "score": 0.4953789279112754,
+  "inst_strict": 0.6258992805755396
+ }
+}
