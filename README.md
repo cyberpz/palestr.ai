@@ -22,9 +22,9 @@ Scores in %, `tok/s` from a 600-token throughput probe. `⏳` = run pending.
 | Qwen3.6-35B-A3B | IQ4_NL | ⏳ | 69.1 | 32.9 | 41.1 |
 | Dory1.0-4B (NVIDIA) | Q5_K_M | ✖ | ✖ | ✖ | — |
 | Ministral-3-8B-Instruct | Q4_K_M | **75.2** | 86.7 | 49.5 | 37.8 |
-| flint 40B-A2.5B | Q3_K_XL | 66.8 | ⏳ | ⏳ | 63.7 |
-| Nemotron Cascade-2 30B-A3B | IQ4_NL | sched | sched | sched | — |
-| Nemotron Bolt-74B-A9B-24GB | LiLiCorr | sched | sched | sched | — |
+| flint 40B-A2.5B | Q3_K_XL | 66.8 | ✖ | ✖ | 63.7 |
+| Nemotron Cascade-2 30B-A3B | IQ4_NL | 74.7 | 87.9 | 27.2 | — |
+| Nemotron Bolt-74B-A9B-24GB | LiLiCorr | ✖ | ✖ | ✖ | — |
 
 Raw per-model JSON in [`results/`](results/). Scores are single runs,
 greedy-ish decoding per task config (see [METHODOLOGY.md](METHODOLOGY.md)).
