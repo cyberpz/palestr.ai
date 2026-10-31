@@ -29,8 +29,7 @@ Scores in %, `tok/s` from a 600-token throughput probe. `⏳` = run pending.
 | Saluki-27B 1.0 (Underdog, abliterated) | IQ2-mix | 28.7 | **90.6** | 35.5 | 19.4 | — |
 
 *Code = HumanEval pass@1 (full 164) from official cards or independent
-reproductions (oMLX, TrustTheBench, ai.rhiza.fr), not run on our rig; quant and
-thinking mode may differ from our runs. — = not published.
+reproductions. — = not published.
 
 Raw per-model JSON in [`results/`](results/). Scores are single runs,
 greedy-ish decoding per task config (see [METHODOLOGY.md](METHODOLOGY.md)).
