@@ -1,0 +1,34 @@
+{
+ "smoke": {
+  "tok_per_s": 13.7,
+  "prompt_tokens": 25,
+  "n_predicted": 128,
+  "sanity": {
+   "math": {
+    "content": "372",
+    "reasoning_len": 488,
+    "finish": "stop",
+    "secs": 11.2
+   },
+   "logic": {
+    "content": "**Incerto**.\n\nSe le premesse sono:\n\n1. **Tutti i Blop sono Razz.**  \n2. **Alcuni Razz sono Fizz.**\n\nallora non segue necessariamente che:\n\n3. **Alcuni Blop sono Fizz.**\n\nMotivo: i Blop sono un sottoinsieme dei Razz, ma gli Razz che sono Fizz potreb",
+    "reasoning_len": 2593,
+    "finish": "length",
+    "secs": 58.4
+   },
+   "extract": {
+    "content": "{\n  \"nome\": \"Mario Rossi\",\n  \"citta\": \"Roma\"\n}",
+    "reasoning_len": 437,
+    "finish": "stop",
+    "secs": 10.5
+   },
+   "italian": {
+    "content": "Il server si è fermato; si prega di effettuare la riattivazione.",
+    "reasoning_len": 821,
+    "finish": "stop",
+    "secs": 17.8
+   }
+  },
+  "date": "2026-10-31"
+ }
+}
