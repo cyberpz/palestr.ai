@@ -20,11 +20,9 @@ Scores in %, `tok/s` from a 600-token throughput probe. `⏳` = run pending.
 | Granite 4.2 30B | Q4_K_M | 17.5 | 69.0 | 89.3 | ✖ | 75.8 |
 | Qwen3.8-27B | Q4_K_M | 45.5 | 35.8 | 80.8 | **50.8** | 85.7 |
 | Qwen3.6-35B-A3B | IQ4_NL | 41.1 | **81.5** | 69.1 | 32.9 | 80.4 |
-| Dory1.0-4B (NVIDIA) | Q5_K_M | — | ✖ | ✖ | ✖ | — |
 | Ministral-3-8B-Instruct | Q4_K_M | 37.8 | 75.2 | 86.7 | 49.5 | 65.5 |
 | flint 40B-A2.5B | Q3_K_XL | 63.7 | 66.8 | 60.7 | 26.8 | 76.0 |
 | Nemotron Cascade-2 30B-A3B | IQ4_NL | — | 74.7 | 87.9 | 27.2 | **87.2** |
-| Nemotron Bolt-74B-A9B-24GB | LiLiCorr | — | ✖ | ✖ | ✖ | 81.5 |
 | LFM2.5-24B-A2B Uncensored-AD | Q4_K_M | 78.2 | 52.1 | 77.4 | 27.5 | — |
 | Saluki-27B 1.0 (Underdog, abliterated) | IQ2-mix | 19.4 | 28.7 | **90.6** | 35.5 | 76.0 |
 | Nanbeige4.3-33B | IQ4_XS | 13.7 | ⏳ | ⏳ | ⏳ | ⏳ |
