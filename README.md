@@ -26,7 +26,8 @@ Scores in %, `tok/s` from a 600-token throughput probe. `⏳` = run pending.
 | LFM2.5-24B-A2B Uncensored-AD | Q4_K_M | 78.2 | 52.1 | 77.4 | 27.5 | — |
 | Saluki-27B 1.0 (Underdog, abliterated) | IQ2-mix | 19.4 | 28.7 | **90.6** | 35.5 | 76.0 |
 | Nanbeige4.3-33B | IQ4_XS | 13.7 | ⏳ | ⏳ | ⏳ | ⏳ |
-| wsp-qwen35-08b-edit (Qwen3.5-0.8B) | Q8 | 56.0 | ⏳ | ⏳ | ⏳ | ⏳ |
+| wsp-qwen35-08b-edit (Qwen3.5-0.8B) | Q8 | 189.6 | ⏳ | ⏳ | 36.2 | ⏳ |
+| qwen35-08b-base (Qwen3.5-0.8B) | Q8 | 191.4 | ⏳ | ⏳ | 37.7 | ⏳ |
 
 *Code = LiveCodeBench v6 pass@1 from official cards or independent
 reproductions. — = not published.

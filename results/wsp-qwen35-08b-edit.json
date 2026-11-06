@@ -1,6 +1,6 @@
 {
   "smoke": {
-    "tok_per_s": 56.0,
+    "tok_per_s": 189.6,
     "prompt_tokens": 22,
     "n_predicted": 127,
     "sanity": {
@@ -8,28 +8,33 @@
         "content": "",
         "reasoning_len": 2080,
         "finish": "length",
-        "secs": 5.3
+        "secs": 4.5
       },
       "logic": {
         "content": "",
         "reasoning_len": 2277,
         "finish": "length",
-        "secs": 5.2
+        "secs": 5.1
       },
       "extract": {
         "content": "",
         "reasoning_len": 2750,
         "finish": "length",
-        "secs": 5.2
+        "secs": 5.0
       },
       "italian": {
         "content": "",
         "reasoning_len": 3018,
         "finish": "length",
-        "secs": 5.3
+        "secs": 5.1
       }
     },
-    "date": "2026-11-05",
-    "note": "all sanity checks exhausted reasoning budget without emitting an answer (finish=length)"
+    "date": "2026-11-06",
+    "note": "all sanity checks exhausted reasoning budget without emitting an answer (finish=length); warm rerun on MasterBeef (earlier 56.0 was cold-start)"
+  },
+  "ifeval": {
+    "date": "2026-11-06",
+    "score": 0.36229205175600737,
+    "inst_strict": 0.4844124700239808
   }
 }

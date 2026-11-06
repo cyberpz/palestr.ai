@@ -1,0 +1,40 @@
+{
+  "smoke": {
+    "tok_per_s": 191.4,
+    "prompt_tokens": 22,
+    "n_predicted": 128,
+    "sanity": {
+      "math": {
+        "content": "",
+        "reasoning_len": 2056,
+        "finish": "length",
+        "secs": 4.5
+      },
+      "logic": {
+        "content": "",
+        "reasoning_len": 2298,
+        "finish": "length",
+        "secs": 5.2
+      },
+      "extract": {
+        "content": "",
+        "reasoning_len": 2664,
+        "finish": "length",
+        "secs": 5.1
+      },
+      "italian": {
+        "content": "",
+        "reasoning_len": 2333,
+        "finish": "length",
+        "secs": 5.1
+      }
+    },
+    "date": "2026-11-06",
+    "note": "all sanity checks exhausted reasoning budget without emitting an answer (finish=length)"
+  },
+  "ifeval": {
+    "date": "2026-11-06",
+    "score": 0.37707948243992606,
+    "inst_strict": 0.4952038369304556
+  }
+}
