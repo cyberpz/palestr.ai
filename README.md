@@ -28,6 +28,7 @@ Scores in %, `tok/s` from a 600-token throughput probe. `⏳` = run pending.
 | Nanbeige4.3-33B | IQ4_XS | 13.7 | ⏳ | ⏳ | ⏳ | ⏳ |
 | wsp-qwen35-08b-edit (Qwen3.5-0.8B) | Q8 | 189.6 | ⏳ | ⏳ | 36.2 | ⏳ |
 | qwen35-08b-base (Qwen3.5-0.8B) | Q8 | 191.4 | ⏳ | ⏳ | 37.7 | ⏳ |
+| Arete-27B (Qwen3.8-27B SFT) | — | 17.0 | ⏳ | ⏳ | ⏳ | ⏳ |
 
 *Code = LiveCodeBench v6 pass@1 from official cards or independent
 reproductions. — = not published.

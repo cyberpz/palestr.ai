@@ -1,0 +1,35 @@
+{
+  "smoke": {
+    "tok_per_s": 17.0,
+    "prompt_tokens": 22,
+    "n_predicted": 128,
+    "sanity": {
+      "math": {
+        "content": "372",
+        "reasoning_len": 527,
+        "finish": "stop",
+        "secs": 9.3
+      },
+      "logic": {
+        "content": "**Incerto.** (conclusione né necessariamente vera né falsa)",
+        "reasoning_len": 1345,
+        "finish": "stop",
+        "secs": 32.1
+      },
+      "extract": {
+        "content": "{\"nome\":\"Giuseppe Vitale\",\"citta\":\"Brindisi\"}",
+        "reasoning_len": 378,
+        "finish": "stop",
+        "secs": 7.4
+      },
+      "italian": {
+        "content": "«Il server risulta inattivo. La prego di ripetere l'operazione.»",
+        "reasoning_len": 1785,
+        "finish": "stop",
+        "secs": 28.9
+      }
+    },
+    "date": "2026-11-08",
+    "note": "NousResearch Arete-27B (SFT di Qwen3.8-27B); reasoning model, tutte le sanity finish=stop con risposte corrette; primo tentativo fallito (llama-server exit 1 alle 08:41 UTC), rerun ok alle 09:26 UTC"
+  }
+}
