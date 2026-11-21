@@ -1,0 +1,35 @@
+{
+  "smoke": {
+    "tok_per_s": 27.6,
+    "prompt_tokens": 22,
+    "n_predicted": 87,
+    "sanity": {
+      "math": {
+        "content": "Ecco il ragionamento:\n1. Moltiplicazione: $17 \\times 23 = 391$\n2. Sottrazione: $391 - 19 = 372$\n\n372",
+        "reasoning_len": 757,
+        "finish": "stop",
+        "secs": 17.5
+      },
+      "logic": {
+        "content": "La risposta corretta è: **Incerto**.\n\nEcco la spiegazione logica:\n\n1.  **Tutti i Blop sono Razz**: Questo significa che il gruppo dei \"Blop\" è interamente contenuto all'interno del gruppo dei \"Razz\".\n2.  **Alcuni Razz sono Fizz**: Questo significa che esiste un'intersezione tra il gruppo dei \"Razz\" e quello dei \"Fizz\".\n3.  **Alcuni Blop sono Fizz**: Perché questa affermazione fosse necessariamente vera, i \"Razz\" che sono \"Fizz\" dovrebbero necessariamente essere anche \"Blop\".\n\n**Perché è incerto?**\nImmagina tre cerchi:\n*   Il cerchio dei **Blop** è piccolo e sta dentro il cerchio grande dei **Razz**.\n*   Il cerchio dei **Fizz** si sovrappone al cerchio dei **Razz**.\n\nTuttavia, il cerchio dei **Fizz** potrebbe sovrapporsi ai **Razz** in due modi diversi:\n*   Potrebbe sovrapporsi proprio nella zona dove si trovano i **Blop** (in questo caso, \"Alcuni Blop sono Fizz\" sarebbe vero).\n*   Potrebbe sovrapporsi ai **Razz** in una zona dove **non** ci",
+        "reasoning_len": 1725,
+        "finish": "length",
+        "secs": 32.0
+      },
+      "extract": {
+        "content": "```json\n{\n  \"nome\": \"Giuseppe Vitale\",\n  \"città\": \"Brindisi\"\n}\n```",
+        "reasoning_len": 505,
+        "finish": "stop",
+        "secs": 8.6
+      },
+      "italian": {
+        "content": "A seconda del contesto (una mail a un collega, un ticket di assistenza o una comunicazione ufficiale), puoi scegliere tra diverse sfumature di formalità:\n\n**Opzione 1: Formale standard (ideale per un'email a un collega o un tecnico)**\n> \"Il server non è raggiungibile, potreste gentilmente riavviarlo?\"\n\n**Opzione 2: Formale e professionale (ideale per un ticket di assistenza)**\n> \"Si segnala che il server risulta offline. Si richiede cortesemente un riavvio.\"\n\n**Opzione 3: Più distaccata/tecnica (molto diretta)**\n> \"Il server non risponde. È necessario procedere con un riavvio.\"\n\n**Cosa è stato cambiato:**\n*   **\"Tipo\"**: eliminato (è una parola di riempimento tipica del parlato).\n*   **\"Sta morto\"**: sostituito con \"non è raggiungibile\", \"risulta offline\" o \"non risponde\" (termini tecnici corretti",
+        "reasoning_len": 2033,
+        "finish": "length",
+        "secs": 38.5
+      }
+    },
+    "date": "2026-11-20",
+    "note": "first smoke on MasterBeef; sanity answers all sane (math/extract stop, logic answer correct before length cap)"
+  }
+}
