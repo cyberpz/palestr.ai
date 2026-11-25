@@ -10,28 +10,28 @@ Scores in %, `tok/s` from a 600-token throughput probe. `⏳` = run pending.
 
 | Model | Quant | tok/s | MMLU-g | GSM8K | IFEval | Code* |
 |---|---|---:|---:|---:|---:|---:|
-| Mellum2-12B-A2.5B-Thinking | Q4_K_M | 120.5 | 70.0 | 81.1 | 27.2 | 69.9 |
-| Spark-X2.5-4B | Q4_K_M | 55.6 | 67.2 | 81.0 | 19.6 | 62.4 |
-| Spark-X2.6-4B | Q4_K_M | 53.6 | 65.7 | 60.6 | 16.8 | 64.0 |
-| MiniCPM5-2B (heretic-abliterated) | Q8_0 | 100.0 | 56.2 | 73.6 | 34.4 | 72.5 |
-| LFM2.5-24B-A2B | Q4_K_XL | **123.5** | 54.3 | 76.5 | 25.7 | 62.0 |
+| flint 40B-A2.5B | Q3_K_XL | 63.7 | 66.8 | 60.7 | 26.8 | 76.0 |
+| gemma4-12b-tense-edit (Gemma4-12B) | Q4 | 27.6 | 11.7 | 11.0 | 14.4 | ⏳ |
+| Granite 4.2 30B | Q4_K_M | 17.5 | 69.0 | 89.3 | ✖ | 75.8 |
 | Granite 4.2 3B | Q4_K_M | 101.3 | 51.6 | 75.3 | 26.1 | 56.4 |
 | Granite 4.2 8B | Q4_K_M | 96.8 | 51.6 | 76.3 | 25.9 | 69.5 |
-| Granite 4.2 30B | Q4_K_M | 17.5 | 69.0 | 89.3 | ✖ | 75.8 |
-| Qwen3.8-27B | Q4_K_M | 45.5 | 35.8 | 80.8 | **50.8** | 85.7 |
-| Qwen3.6-35B-A3B | IQ4_NL | 41.1 | **81.5** | 69.1 | 32.9 | 80.4 |
-| Ministral-3-8B-Instruct | Q4_K_M | 37.8 | 75.2 | 86.7 | 49.5 | 65.5 |
-| flint 40B-A2.5B | Q3_K_XL | 63.7 | 66.8 | 60.7 | 26.8 | 76.0 |
-| Nemotron Cascade-2 30B-A3B | IQ4_NL | — | 74.7 | 87.9 | 27.2 | **87.2** |
+| LFM2.5-24B-A2B | Q4_K_XL | **123.5** | 54.3 | 76.5 | 25.7 | 62.0 |
 | LFM2.5-24B-A2B Uncensored-AD | Q4_K_M | 78.2 | 52.1 | 77.4 | 27.5 | — |
-| Saluki-27B 1.0 (Underdog, abliterated) | IQ2-mix | 19.4 | 28.7 | **90.6** | 35.5 | 76.0 |
-| Nanbeige4.3-33B | IQ4_XS | 13.7 | ⏳ | ⏳ | ⏳ | ⏳ |
-| wsp-qwen35-08b-edit (Qwen3.5-0.8B) | Q8 | 189.6 | ⏳ | ⏳ | 36.2 | ⏳ |
-| qwen35-08b-base (Qwen3.5-0.8B) | Q8 | 191.4 | ⏳ | ⏳ | 37.7 | ⏳ |
-| gemma4-12b-tense-edit (Gemma4-12B) | Q4 | 27.6 | 11.7 | 11.0 | 14.4 | ⏳ |
-| qwen35-2b-edit (Qwen3.5-2B) | Q4 | 41.1 | 61.0 | 54.4 | 37.2 | ⏳ |
 | LFM3-1.7B | Q4_K_M | 73.5 | 51.9 | 48.0 | 26.4 | 73.5 |
+| Mellum2-12B-A2.5B-Thinking | Q4_K_M | 120.5 | 70.0 | 81.1 | 27.2 | 69.9 |
 | Mellum2.1-12B-A2.5B-Thinking | Q4_K_M | 117.4 | 69.1 | 84.5 | 28.7 | 82.0 |
+| MiniCPM5-2B (heretic-abliterated) | Q8_0 | 100.0 | 56.2 | 73.6 | 34.4 | 72.5 |
+| Ministral-3-8B-Instruct | Q4_K_M | 37.8 | 75.2 | 86.7 | 49.5 | 65.5 |
+| Nanbeige4.3-33B | IQ4_XS | 13.7 | ⏳ | ⏳ | ⏳ | ⏳ |
+| Nemotron Cascade-2 30B-A3B | IQ4_NL | — | 74.7 | 87.9 | 27.2 | **87.2** |
+| Qwen3.6-35B-A3B | IQ4_NL | 41.1 | **81.5** | 69.1 | 32.9 | 80.4 |
+| Qwen3.8-27B | Q4_K_M | 45.5 | 35.8 | 80.8 | **50.8** | 85.7 |
+| qwen35-08b-base (Qwen3.5-0.8B) | Q8 | 191.4 | ⏳ | ⏳ | 37.7 | ⏳ |
+| qwen35-2b-edit (Qwen3.5-2B) | Q4 | 41.1 | 61.0 | 54.4 | 37.2 | ⏳ |
+| Saluki-27B 1.0 (Underdog, abliterated) | IQ2-mix | 19.4 | 28.7 | **90.6** | 35.5 | 76.0 |
+| Spark-X2.5-4B | Q4_K_M | 55.6 | 67.2 | 81.0 | 19.6 | 62.4 |
+| Spark-X2.6-4B | Q4_K_M | 53.6 | 65.7 | 60.6 | 16.8 | 64.0 |
+| wsp-qwen35-08b-edit (Qwen3.5-0.8B) | Q8 | 189.6 | ⏳ | ⏳ | 36.2 | ⏳ |
 
 *Code = LiveCodeBench v6 pass@1 from official cards or independent
 reproductions. — = not published.
