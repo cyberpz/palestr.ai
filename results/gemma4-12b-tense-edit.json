@@ -107,5 +107,11 @@
     "score": 0.10993176648976498,
     "flexible": 0.13570887035633056,
     "note": "also far below base-model expectation; same run as mmlu"
+  },
+  "ifeval": {
+    "score": 0.14417744916820702,
+    "inst_strict": 0.24580335731414868,
+    "date": "2026-11-23",
+    "note": "completed 25/11 night run; suite confirms collapse (well below random baseline) — same failure mode as mmlu/gsm8k"
   }
 }

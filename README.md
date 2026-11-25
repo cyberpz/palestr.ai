@@ -29,7 +29,10 @@ Scores in %, `tok/s` from a 600-token throughput probe. `⏳` = run pending.
 | wsp-qwen35-08b-edit (Qwen3.5-0.8B) | Q8 | 189.6 | ⏳ | ⏳ | 36.2 | ⏳ |
 | qwen35-08b-base (Qwen3.5-0.8B) | Q8 | 191.4 | ⏳ | ⏳ | 37.7 | ⏳ |
 | Arete-27B (Qwen3.8-27B SFT) | — | 17.0 | ⏳ | ⏳ | ⏳ | ⏳ |
-| gemma4-12b-tense-edit (Gemma4-12B) | Q4 | 27.6 | 11.7 | 11.0 | ⏳ | ⏳ |
+| gemma4-12b-tense-edit (Gemma4-12B) | Q4 | 27.6 | 11.7 | 11.0 | 14.4 | ⏳ |
+| qwen35-2b-edit (Qwen3.5-2B) | Q4 | 41.1 | 61.0 | 54.4 | 37.2 | ⏳ |
+| LFM3-1.7B | Q4_K_M | 73.5 | 51.9 | 48.0 | 26.4 | ⏳ |
+| Mellum2.1-12B-A2.5B-Thinking | Q4_K_M | 117.4 | 69.1 | 84.5 | 28.7 | ⏳ |
 
 *Code = LiveCodeBench v6 pass@1 from official cards or independent
 reproductions. — = not published.
