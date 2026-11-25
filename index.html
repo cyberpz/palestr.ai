@@ -64,7 +64,7 @@ animation:blink 1s steps(1) infinite}
 <thead><tr><th>Model</th><th>Quant</th><th>tok/s</th><th>MMLU-g</th><th>GSM8K</th><th>IFEval</th><th>Code*</th></tr></thead>
 <tbody>
 <tr><td>flint 40B-A2.5B</td><td>Q3_K_XL</td><td>63.7</td><td>66.8</td><td>60.7</td><td>26.8</td><td>76.0</td></tr>
-<tr><td>gemma4-12b-tense-edit (Gemma4-12B)</td><td>Q4</td><td>27.6</td><td>11.7</td><td>11.0</td><td>14.4</td><td class="pending">⏳</td></tr>
+<tr><td>gemma4-12b-tense-edit (Gemma4-12B)</td><td>Q4</td><td>27.6</td><td>11.7</td><td>11.0</td><td>14.4</td><td>23.8</td></tr>
 <tr><td>Granite 4.2 30B</td><td>Q4_K_M</td><td>17.5</td><td>69.0</td><td>89.3</td><td class="pending">—</td><td>75.8</td></tr>
 <tr><td>Granite 4.2 3B</td><td>Q4_K_M</td><td>101.3</td><td>51.6</td><td>75.3</td><td>26.1</td><td>56.4</td></tr>
 <tr><td>Granite 4.2 8B</td><td>Q4_K_M</td><td>96.8</td><td>51.6</td><td>76.3</td><td>25.9</td><td>69.5</td></tr>
@@ -78,15 +78,15 @@ animation:blink 1s steps(1) infinite}
 <tr><td>Nemotron Cascade-2 30B-A3B</td><td>IQ4_NL</td><td>—</td><td>74.7</td><td>87.9</td><td>27.2</td><td class="best">87.2</td></tr>
 <tr><td>Qwen3.6-35B-A3B</td><td>IQ4_NL</td><td>41.1</td><td class="best">81.5</td><td>69.1</td><td>32.9</td><td>80.4</td></tr>
 <tr><td>Qwen3.8-27B</td><td>Q4_K_M</td><td>45.5</td><td>35.8</td><td>80.8</td><td class="best">50.8</td><td>85.7</td></tr>
-<tr><td>qwen35-08b-base (Qwen3.5-0.8B)</td><td>Q8</td><td>191.4</td><td class="pending">⏳</td><td class="pending">⏳</td><td>37.7</td><td class="pending">⏳</td></tr>
-<tr><td>qwen35-2b-edit (Qwen3.5-2B)</td><td>Q4</td><td>41.1</td><td>61.0</td><td>54.4</td><td>37.2</td><td class="pending">⏳</td></tr>
+<tr><td>qwen35-08b-base (Qwen3.5-0.8B)</td><td>Q8</td><td>191.4</td><td class="pending">⏳</td><td class="pending">⏳</td><td>37.7</td><td>5.4</td></tr>
+<tr><td>qwen35-2b-edit (Qwen3.5-2B)</td><td>Q4</td><td>41.1</td><td>61.0</td><td>54.4</td><td>37.2</td><td>8.3</td></tr>
 <tr><td>Saluki-27B 1.0 (Underdog, abliterated)</td><td>IQ2-mix</td><td>19.4</td><td>28.7</td><td class="best">90.6</td><td>35.5</td><td>76.0</td></tr>
 <tr><td>Spark-X2.5-4B</td><td>Q4_K_M</td><td>55.6</td><td>67.2</td><td>81.0</td><td>19.6</td><td>62.4</td></tr>
 <tr><td>Spark-X2.6-4B</td><td>Q4_K_M</td><td>53.6</td><td>65.7</td><td>60.6</td><td>16.8</td><td>64.0</td></tr>
-<tr><td>wsp-qwen35-08b-edit (Qwen3.5-0.8B)</td><td>Q8</td><td>189.6</td><td class="pending">⏳</td><td class="pending">⏳</td><td>36.2</td><td class="pending">⏳</td></tr>
+<tr><td>wsp-qwen35-08b-edit (Qwen3.5-0.8B)</td><td>Q8</td><td>189.6</td><td class="pending">⏳</td><td class="pending">⏳</td><td>36.2</td><td>5.3</td></tr>
 </tbody>
 </table>
-<p class="sub">*Code = LiveCodeBench v6 pass@1 from official cards or independent reproductions. — = not published.</p>
+<p class="sub">*Code = LiveCodeBench v6 pass@1 from official cards or independent reproductions (local runs: chat protocol, thinking disabled where the model has a switch). — = not published.</p>
 
 <h2>WHAT THE BENCHMARKS MEASURE</h2>
 <div class="bm"><h3>MMLU-g</h3><span class="tag">general knowledge · 14,043 questions · 57 subjects</span>

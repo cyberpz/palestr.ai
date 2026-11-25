@@ -1,117 +1,119 @@
 {
+ "gemma4-12b-tense-edit": {
   "smoke": {
-    "tok_per_s": 27.6,
-    "prompt_tokens": 22,
-    "n_predicted": 87,
-    "sanity": {
-      "math": {
-        "content": "Ecco il ragionamento:\n1. Moltiplicazione: $17 \\times 23 = 391$\n2. Sottrazione: $391 - 19 = 372$\n\n372",
-        "reasoning_len": 757,
-        "finish": "stop",
-        "secs": 17.5
-      },
-      "logic": {
-        "content": "La risposta corretta è: **Incerto**.\n\nEcco la spiegazione logica:\n\n1.  **Tutti i Blop sono Razz**: Questo significa che il gruppo dei \"Blop\" è interamente contenuto all'interno del gruppo dei \"Razz\".\n2.  **Alcuni Razz sono Fizz**: Questo significa che esiste un'intersezione tra il gruppo dei \"Razz\" e quello dei \"Fizz\".\n3.  **Alcuni Blop sono Fizz**: Perché questa affermazione fosse necessariamente vera, i \"Razz\" che sono \"Fizz\" dovrebbero necessariamente essere anche \"Blop\".\n\n**Perché è incerto?**\nImmagina tre cerchi:\n*   Il cerchio dei **Blop** è piccolo e sta dentro il cerchio grande dei **Razz**.\n*   Il cerchio dei **Fizz** si sovrappone al cerchio dei **Razz**.\n\nTuttavia, il cerchio dei **Fizz** potrebbe sovrapporsi ai **Razz** in due modi diversi:\n*   Potrebbe sovrapporsi proprio nella zona dove si trovano i **Blop** (in questo caso, \"Alcuni Blop sono Fizz\" sarebbe vero).\n*   Potrebbe sovrapporsi ai **Razz** in una zona dove **non** ci",
-        "reasoning_len": 1725,
-        "finish": "length",
-        "secs": 32.0
-      },
-      "extract": {
-        "content": "```json\n{\n  \"nome\": \"Giuseppe Vitale\",\n  \"città\": \"Brindisi\"\n}\n```",
-        "reasoning_len": 505,
-        "finish": "stop",
-        "secs": 8.6
-      },
-      "italian": {
-        "content": "A seconda del contesto (una mail a un collega, un ticket di assistenza o una comunicazione ufficiale), puoi scegliere tra diverse sfumature di formalità:\n\n**Opzione 1: Formale standard (ideale per un'email a un collega o un tecnico)**\n> \"Il server non è raggiungibile, potreste gentilmente riavviarlo?\"\n\n**Opzione 2: Formale e professionale (ideale per un ticket di assistenza)**\n> \"Si segnala che il server risulta offline. Si richiede cortesemente un riavvio.\"\n\n**Opzione 3: Più distaccata/tecnica (molto diretta)**\n> \"Il server non risponde. È necessario procedere con un riavvio.\"\n\n**Cosa è stato cambiato:**\n*   **\"Tipo\"**: eliminato (è una parola di riempimento tipica del parlato).\n*   **\"Sta morto\"**: sostituito con \"non è raggiungibile\", \"risulta offline\" o \"non risponde\" (termini tecnici corretti",
-        "reasoning_len": 2033,
-        "finish": "length",
-        "secs": 38.5
-      }
+   "tok_per_s": 27.6,
+   "prompt_tokens": 22,
+   "n_predicted": 87,
+   "sanity": {
+    "math": {
+     "content": "Ecco il ragionamento:\n1. Moltiplicazione: $17 \\times 23 = 391$\n2. Sottrazione: $391 - 19 = 372$\n\n372",
+     "reasoning_len": 757,
+     "finish": "stop",
+     "secs": 17.5
     },
-    "date": "2026-11-20",
-    "note": "first smoke on MasterBeef; sanity answers all sane (math/extract stop, logic answer correct before length cap)"
+    "logic": {
+     "content": "La risposta corretta è: **Incerto**.\n\nEcco la spiegazione logica:\n\n1.  **Tutti i Blop sono Razz**: Questo significa che il gruppo dei \"Blop\" è interamente contenuto all'interno del gruppo dei \"Razz\".\n2.  **Alcuni Razz sono Fizz**: Questo significa che esiste un'intersezione tra il gruppo dei \"Razz\" e quello dei \"Fizz\".\n3.  **Alcuni Blop sono Fizz**: Perché questa affermazione fosse necessariamente vera, i \"Razz\" che sono \"Fizz\" dovrebbero necessariamente essere anche \"Blop\".\n\n**Perché è incerto?**\nImmagina tre cerchi:\n*   Il cerchio dei **Blop** è piccolo e sta dentro il cerchio grande dei **Razz**.\n*   Il cerchio dei **Fizz** si sovrappone al cerchio dei **Razz**.\n\nTuttavia, il cerchio dei **Fizz** potrebbe sovrapporsi ai **Razz** in due modi diversi:\n*   Potrebbe sovrapporsi proprio nella zona dove si trovano i **Blop** (in questo caso, \"Alcuni Blop sono Fizz\" sarebbe vero).\n*   Potrebbe sovrapporsi ai **Razz** in una zona dove **non** ci",
+     "reasoning_len": 1725,
+     "finish": "length",
+     "secs": 32.0
+    },
+    "extract": {
+     "content": "```json\n{\n  \"nome\": \"Giuseppe Vitale\",\n  \"città\": \"Brindisi\"\n}\n```",
+     "reasoning_len": 505,
+     "finish": "stop",
+     "secs": 8.6
+    },
+    "italian": {
+     "content": "A seconda del contesto (una mail a un collega, un ticket di assistenza o una comunicazione ufficiale), puoi scegliere tra diverse sfumature di formalità:\n\n**Opzione 1: Formale standard (ideale per un'email a un collega o un tecnico)**\n> \"Il server non è raggiungibile, potreste gentilmente riavviarlo?\"\n\n**Opzione 2: Formale e professionale (ideale per un ticket di assistenza)**\n> \"Si segnala che il server risulta offline. Si richiede cortesemente un riavvio.\"\n\n**Opzione 3: Più distaccata/tecnica (molto diretta)**\n> \"Il server non risponde. È necessario procedere con un riavvio.\"\n\n**Cosa è stato cambiato:**\n*   **\"Tipo\"**: eliminato (è una parola di riempimento tipica del parlato).\n*   **\"Sta morto\"**: sostituito con \"non è raggiungibile\", \"risulta offline\" o \"non risponde\" (termini tecnici corretti",
+     "reasoning_len": 2033,
+     "finish": "length",
+     "secs": 38.5
+    }
+   }
+  },
+  "runner": {
+   "error": "timeout health, log: F:\\palestra\\logs\\gemma4-12b-tense-edit_1795381204.log"
   },
   "mmlu": {
-    "date": "2026-11-23",
-    "subtasks": {
-      "mmlu_abstract_algebra_generative": 0.12,
-      "mmlu_anatomy_generative": 0.0593,
-      "mmlu_astronomy_generative": 0.0789,
-      "mmlu_college_biology_generative": 0.0764,
-      "mmlu_college_chemistry_generative": 0.16,
-      "mmlu_college_computer_science_generative": 0.17,
-      "mmlu_college_mathematics_generative": 0.17,
-      "mmlu_college_physics_generative": 0.098,
-      "mmlu_computer_security_generative": 0.08,
-      "mmlu_conceptual_physics_generative": 0.0553,
-      "mmlu_electrical_engineering_generative": 0.0483,
-      "mmlu_elementary_mathematics_generative": 0.0952,
-      "mmlu_high_school_biology_generative": 0.1161,
-      "mmlu_high_school_chemistry_generative": 0.0887,
-      "mmlu_high_school_computer_science_generative": 0.11,
-      "mmlu_high_school_mathematics_generative": 0.0667,
-      "mmlu_high_school_physics_generative": 0.1523,
-      "mmlu_high_school_statistics_generative": 0.1759,
-      "mmlu_machine_learning_generative": 0.1696,
-      "mmlu_business_ethics_generative": 0.19,
-      "mmlu_clinical_knowledge_generative": 0.0679,
-      "mmlu_college_medicine_generative": 0.1214,
-      "mmlu_global_facts_generative": 0.04,
-      "mmlu_human_aging_generative": 0.0538,
-      "mmlu_management_generative": 0.0874,
-      "mmlu_marketing_generative": 0.1667,
-      "mmlu_medical_genetics_generative": 0.01,
-      "mmlu_miscellaneous_generative": 0.0702,
-      "mmlu_nutrition_generative": 0.0817,
-      "mmlu_professional_accounting_generative": 0.1383,
-      "mmlu_professional_medicine_generative": 0.239,
-      "mmlu_virology_generative": 0.0422,
-      "mmlu_econometrics_generative": 0.1053,
-      "mmlu_high_school_geography_generative": 0.1111,
-      "mmlu_high_school_government_and_politics_generative": 0.0777,
-      "mmlu_high_school_macroeconomics_generative": 0.0795,
-      "mmlu_high_school_microeconomics_generative": 0.0798,
-      "mmlu_high_school_psychology_generative": 0.0734,
-      "mmlu_human_sexuality_generative": 0.0992,
-      "mmlu_professional_psychology_generative": 0.1275,
-      "mmlu_public_relations_generative": 0.1273,
-      "mmlu_security_studies_generative": 0.1102,
-      "mmlu_sociology_generative": 0.0796,
-      "mmlu_us_foreign_policy_generative": 0.05,
-      "mmlu_formal_logic_generative": 0.1667,
-      "mmlu_high_school_european_history_generative": 0.2424,
-      "mmlu_high_school_us_history_generative": 0.2598,
-      "mmlu_high_school_world_history_generative": 0.2827,
-      "mmlu_international_law_generative": 0.0909,
-      "mmlu_jurisprudence_generative": 0.1852,
-      "mmlu_logical_fallacies_generative": 0.0798,
-      "mmlu_moral_disputes_generative": 0.0809,
-      "mmlu_moral_scenarios_generative": 0.1732,
-      "mmlu_philosophy_generative": 0.1383,
-      "mmlu_prehistory_generative": 0.1327,
-      "mmlu_professional_law_generative": 0.2203,
-      "mmlu_world_religions_generative": 0.0819,
-      "mmlu_generative::stem": 0.1047,
-      "mmlu_generative::other": 0.1011,
-      "mmlu_generative::social sciences": 0.0949,
-      "mmlu_generative::humanities": 0.1798,
-      "mmlu_generative": 0.1269
-    },
-    "score": 0.1171,
-    "n_subtasks": 62,
-    "note": "catastrophically low (below 25% random baseline) despite sane smoke outputs — suspect answer-format extraction or a broken edit; investigate before trusting"
+   "subtasks": {
+    "mmlu_abstract_algebra_generative": 0.12,
+    "mmlu_anatomy_generative": 0.0593,
+    "mmlu_astronomy_generative": 0.0789,
+    "mmlu_college_biology_generative": 0.0764,
+    "mmlu_college_chemistry_generative": 0.16,
+    "mmlu_college_computer_science_generative": 0.17,
+    "mmlu_college_mathematics_generative": 0.17,
+    "mmlu_college_physics_generative": 0.098,
+    "mmlu_computer_security_generative": 0.08,
+    "mmlu_conceptual_physics_generative": 0.0553,
+    "mmlu_electrical_engineering_generative": 0.0483,
+    "mmlu_elementary_mathematics_generative": 0.0952,
+    "mmlu_high_school_biology_generative": 0.1161,
+    "mmlu_high_school_chemistry_generative": 0.0887,
+    "mmlu_high_school_computer_science_generative": 0.11,
+    "mmlu_high_school_mathematics_generative": 0.0667,
+    "mmlu_high_school_physics_generative": 0.1523,
+    "mmlu_high_school_statistics_generative": 0.1759,
+    "mmlu_machine_learning_generative": 0.1696,
+    "mmlu_business_ethics_generative": 0.19,
+    "mmlu_clinical_knowledge_generative": 0.0679,
+    "mmlu_college_medicine_generative": 0.1214,
+    "mmlu_global_facts_generative": 0.04,
+    "mmlu_human_aging_generative": 0.0538,
+    "mmlu_management_generative": 0.0874,
+    "mmlu_marketing_generative": 0.1667,
+    "mmlu_medical_genetics_generative": 0.01,
+    "mmlu_miscellaneous_generative": 0.0702,
+    "mmlu_nutrition_generative": 0.0817,
+    "mmlu_professional_accounting_generative": 0.1383,
+    "mmlu_professional_medicine_generative": 0.239,
+    "mmlu_virology_generative": 0.0422,
+    "mmlu_econometrics_generative": 0.1053,
+    "mmlu_high_school_geography_generative": 0.1111,
+    "mmlu_high_school_government_and_politics_generative": 0.0777,
+    "mmlu_high_school_macroeconomics_generative": 0.0795,
+    "mmlu_high_school_microeconomics_generative": 0.0798,
+    "mmlu_high_school_psychology_generative": 0.0734,
+    "mmlu_human_sexuality_generative": 0.0992,
+    "mmlu_professional_psychology_generative": 0.1275,
+    "mmlu_public_relations_generative": 0.1273,
+    "mmlu_security_studies_generative": 0.1102,
+    "mmlu_sociology_generative": 0.0796,
+    "mmlu_us_foreign_policy_generative": 0.05,
+    "mmlu_formal_logic_generative": 0.1667,
+    "mmlu_high_school_european_history_generative": 0.2424,
+    "mmlu_high_school_us_history_generative": 0.2598,
+    "mmlu_high_school_world_history_generative": 0.2827,
+    "mmlu_international_law_generative": 0.0909,
+    "mmlu_jurisprudence_generative": 0.1852,
+    "mmlu_logical_fallacies_generative": 0.0798,
+    "mmlu_moral_disputes_generative": 0.0809,
+    "mmlu_moral_scenarios_generative": 0.1732,
+    "mmlu_philosophy_generative": 0.1383,
+    "mmlu_prehistory_generative": 0.1327,
+    "mmlu_professional_law_generative": 0.2203,
+    "mmlu_world_religions_generative": 0.0819,
+    "mmlu_generative::stem": 0.1047,
+    "mmlu_generative::other": 0.1011,
+    "mmlu_generative::social sciences": 0.0949,
+    "mmlu_generative::humanities": 0.1798,
+    "mmlu_generative": 0.1269
+   },
+   "score": 0.1171,
+   "n_subtasks": 62
   },
   "gsm8k": {
-    "date": "2026-11-23",
-    "score": 0.10993176648976498,
-    "flexible": 0.13570887035633056,
-    "note": "also far below base-model expectation; same run as mmlu"
+   "score": 0.10993176648976498,
+   "flexible": 0.13570887035633056
   },
   "ifeval": {
-    "score": 0.14417744916820702,
-    "inst_strict": 0.24580335731414868,
-    "date": "2026-11-23",
-    "note": "completed 25/11 night run; suite confirms collapse (well below random baseline) — same failure mode as mmlu/gsm8k"
+   "score": 0.14417744916820702,
+   "inst_strict": 0.24580335731414868
+  },
+  "lcb": {
+   "score": 0.23791469194312795,
+   "passed": 251,
+   "n": 1055
   }
+ }
 }

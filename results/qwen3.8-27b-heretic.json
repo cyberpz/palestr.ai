@@ -1,0 +1,7 @@
+{
+ "qwen3.8-27b-heretic": {
+  "runner": {
+   "error": "llama-server morto all'avvio (exit 3221226505), log: F:\\palestra\\logs\\qwen3.8-27b-heretic_1793228354.log"
+  }
+ }
+}

@@ -1,0 +1,33 @@
+{
+ "dory1.0-4b": {
+  "runner": {
+   "error": "llama-server morto all'avvio (exit 1), log: F:\\palestra\\logs\\dory1.0-4b_1793433175.log"
+  },
+  "smoke": {
+   "tok_per_s_error": "HTTP Error 502: Bad Gateway",
+   "sanity": {
+    "math": {
+     "error": "HTTP Error 502: Bad Gateway"
+    },
+    "logic": {
+     "error": "HTTP Error 502: Bad Gateway"
+    },
+    "extract": {
+     "error": "HTTP Error 502: Bad Gateway"
+    },
+    "italian": {
+     "error": "HTTP Error 502: Bad Gateway"
+    }
+   }
+  },
+  "mmlu": {
+   "error": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `hf auth login` or by passing `token=<your_token>`"
+  },
+  "gsm8k": {
+   "error": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `hf auth login` or by passing `token=<your_token>`"
+  },
+  "ifeval": {
+   "error": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `hf auth login` or by passing `token=<your_token>`"
+  }
+ }
+}
