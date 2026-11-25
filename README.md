@@ -22,7 +22,6 @@ Scores in %, `tok/s` from a 600-token throughput probe. `⏳` = run pending.
 | Mellum2.1-12B-A2.5B-Thinking | Q4_K_M | 117.4 | 69.1 | 84.5 | 28.7 | 82.0 |
 | MiniCPM5-2B (heretic-abliterated) | Q8_0 | 100.0 | 56.2 | 73.6 | 34.4 | 72.5 |
 | Ministral-3-8B-Instruct | Q4_K_M | 37.8 | 75.2 | 86.7 | 49.5 | 65.5 |
-| Nanbeige4.3-33B | IQ4_XS | 13.7 | ⏳ | ⏳ | ⏳ | ⏳ |
 | Nemotron Cascade-2 30B-A3B | IQ4_NL | — | 74.7 | 87.9 | 27.2 | **87.2** |
 | Qwen3.6-35B-A3B | IQ4_NL | 41.1 | **81.5** | 69.1 | 32.9 | 80.4 |
 | Qwen3.8-27B | Q4_K_M | 45.5 | 35.8 | 80.8 | **50.8** | 85.7 |
