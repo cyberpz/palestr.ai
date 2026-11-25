@@ -32,6 +32,9 @@ th,td{padding:9px 12px;text-align:right;border-bottom:1px solid rgba(0,255,65,.0
 th:first-child,td:first-child{text-align:left}
 th{background:var(--surface2);color:var(--green-dim);font-weight:700;font-size:11px;
 text-transform:uppercase;letter-spacing:1.5px}
+th.sortable{cursor:pointer;user-select:none}
+th.sortable:hover{color:var(--green)}
+th .arr{color:var(--green);font-size:10px;margin-left:4px}
 td:first-child{color:var(--text);font-weight:600}
 .best{color:var(--green);font-weight:700;text-shadow:0 0 8px var(--green-glow)}
 .pending{color:var(--amber)}
@@ -57,7 +60,7 @@ animation:blink 1s steps(1) infinite}
 <p class="sub">Reproducible benchmarks on consumer hardware — <b>2× RTX 3060 12GB</b> · llama.cpp · GGUF Q4 · suite: <b>MMLU-g · GSM8K · IFEval</b></p>
 
 <h2>RESULTS</h2>
-<table>
+<table id="results">
 <thead><tr><th>Model</th><th>Quant</th><th>tok/s</th><th>MMLU-g</th><th>GSM8K</th><th>IFEval</th><th>Code*</th></tr></thead>
 <tbody>
 <tr><td>flint 40B-A2.5B</td><td>Q3_K_XL</td><td>63.7</td><td>66.8</td><td>60.7</td><td>26.8</td><td>76.0</td></tr>
@@ -99,5 +102,46 @@ animation:blink 1s steps(1) infinite}
 <footer>Hardware: 2× RTX 3060 12GB · llama.cpp (Unsloth + LM Studio backends) · lm-eval 0.4.13 · Windows 11.<br>
 Data: <a href="https://github.com/cyberpz/palestr.ai/tree/master/results">/results</a> · Code &amp; methodology: <a href="https://github.com/cyberpz/palestr.ai">palestr.ai</a> · Updated 2026-10-23</footer>
 </div>
+<script>
+(function(){
+  var table=document.getElementById("results");
+  var heads=table.querySelectorAll("thead th");
+  var tbody=table.querySelector("tbody");
+  var state={col:-1,dir:1};
+  function cellVal(row,i){
+    var td=row.cells[i];
+    var txt=td.textContent.trim();
+    if(i>=2){
+      if(td.classList.contains("pending")||txt==="—"||txt==="⏳"||txt==="✖")return null;
+      var n=parseFloat(txt.replace(/[^\d.\-]/g,""));
+      if(!isNaN(n))return n;
+    }
+    return txt.toLowerCase();
+  }
+  function sortCol(i){
+    state.dir=(state.col===i)?-state.dir:(i<2?1:-1);
+    state.col=i;
+    var rows=Array.prototype.slice.call(tbody.rows);
+    rows.sort(function(a,b){
+      var va=cellVal(a,i),vb=cellVal(b,i);
+      if(va===null&&vb===null)return 0;
+      if(va===null)return 1;           // pending/— sempre in fondo
+      if(vb===null)return -1;
+      if(typeof va==="number"&&typeof vb==="number")return (va-vb)*state.dir;
+      if(typeof va!==typeof vb)return (typeof va==="number")?-1:1;
+      return va<vb?-state.dir:va>vb?state.dir:0;
+    });
+    rows.forEach(function(r){tbody.appendChild(r);});
+    heads.forEach(function(h,j){
+      var a=h.querySelector(".arr");if(a)a.remove();
+      if(j===i){var s=document.createElement("span");s.className="arr";
+        s.textContent=state.dir===1?"▲":"▼";h.appendChild(s);}
+    });
+  }
+  heads.forEach(function(h,i){h.classList.add("sortable");
+    h.title="Sort by "+h.textContent.trim();
+    h.addEventListener("click",function(){sortCol(i);});});
+})();
+</script>
 </body>
 </html>
